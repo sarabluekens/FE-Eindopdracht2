@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import NavItem from './NavItem'
 
 const Navbar = () => {
@@ -6,14 +5,11 @@ const Navbar = () => {
     <>
       <nav>
         <NavItem href="/" active={false} text="Home" />
-
         <ul>
-          <li>
-            <NavItem href="/about" active={false} text="about" />
-          </li>
-          <li>Projects</li>
-          <li>CV</li>
-          <li>Contact</li>
+          <NavItem href="/about" active={false} text="about" />
+          <NavItem href="/projects" active={false} text="projects" />
+          <NavItem href="/cv" active={false} text="cv" />
+          <NavItem href="/contact" active={false} text="contact" />
         </ul>
       </nav>
     </>
