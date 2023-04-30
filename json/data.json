@@ -4,20 +4,68 @@
     "title": "Jumping Jaws",
     "promoText": "An endless runner game where two players need to jump on a trampoline to survive.",
     "promoImage": "jumpingJawsPromo",
-    "promoAlt": "Jumping Jaws op de Facts Expo in Gent"
+    "promoAlt": "Jumping Jaws op de Facts Expo in Gent",
+    "codeLink": "https://github.com/DauweQuinten/Trampoline_Groep2_FrontEnd",
+    "tags": [
+      "Unity",
+      "C#",
+      "UX/UI",
+      "Design",
+      "Websocket",
+      "Xbox Kinect",
+      "ESP"
+    ],
+    "role": ["Frontend", "Research", "UX/UI", "Design"]
   },
   {
     "id": 2,
     "title": "To the grave",
     "promoText": "A horrifying quiz that determines how you will meet your end.",
     "promoImage": "toTheGrave",
-    "promoAlt": "An online calculator of Death."
+    "promoAlt": "An online calculator of Death.",
+    "codeLink": "https://github.com/sarabluekens/calculator",
+    "externalLink": "https://tothegrave.netlify.app/",
+    "tags": ["React", "Javascript", "HTML/CSS", "Netlify"],
+    "role": ["Frontend", "Design"]
   },
   {
     "id": 3,
     "title": "Led Lightroom",
     "promoText": "An interactive lightroom where people change the lights by moving their body in the room.",
     "promoImage": "lightroom",
-    "promoAlt": "3D of the lightroom with the light effects."
+    "promoAlt": "3D of the lightroom with the light effects.",
+    "codeLink": "https://github.com/sarabluekens/Bap-SmileSafari",
+    "externalLink": "https://www.behance.net/gallery/150697827/Sunset-Room-An-immersive-lightroom-for-Smile-Safari?tracking_source=search_projects%7Csmile+safari",
+    "tags": [
+      "Arduino",
+      "TouchDesigner",
+      "LedMatrix/Strip",
+      "Javascript",
+      "Xbox Kinect"
+    ],
+    "role": ["Research", "UX/UI", "Creative Development"]
+  },
+
+  {
+    "id": 4,
+    "title": "A Write for sore eyes",
+    "promoText": "A web application the allows you to write out what you’re feeling. The website adjusts according to your mood.",
+    "promoImage": "personal",
+    "promoAlt": "Homescreen of the website.",
+    "codeLink": "https://github.com/sarabluekens/personal",
+    "externalLink": "https://sleepy-jones-731a03.netlify.app/",
+    "tags": ["React", "Next.js", "Netlify", "Design"],
+    "role": ["Frontend", "Research", "Design"]
+  },
+  {
+    "id": 5,
+    "title": "Sneaky Sam",
+    "promoText": "An endless runner game that is controlled with the movement of the players head.",
+    "promoImage": "sam",
+    "promoAlt": "Startscreen of the game in Unity.",
+    "codeLink": "https://github.com/sarabluekens/PassionProjectHerex",
+    "externalLink": "https://www.sarabluekens.be/passion/sam2/",
+    "tags": ["Unity", "C#", "UX/UI", "Sound", "Javascript", "TensorFlow"],
+    "role": ["Frontend", "Backend", "Design"]
   }
 ]

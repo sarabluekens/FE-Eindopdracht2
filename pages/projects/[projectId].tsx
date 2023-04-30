@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import data from '../../json/data.json'
+import Image from 'next/image'
 
 const project = ({ projectInfo }: { projectInfo: any }) => {
   //  Id opvragen uit de url via de useRouter hook
@@ -8,8 +9,14 @@ const project = ({ projectInfo }: { projectInfo: any }) => {
 
   return (
     <>
-      <p>Hello world {projectInfo.id}</p>
-      <p>Project {projectInfo.language}</p>
+      <h1> {projectInfo.title}</h1>
+      <Image
+        src={`/${projectInfo.promoImage}.png`}
+        alt="projectafbeelding"
+        width={900}
+        height={900}
+      />
+      <p>{projectInfo.description}</p>
     </>
   )
 }

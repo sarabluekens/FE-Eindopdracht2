@@ -26,11 +26,10 @@ module.exports = {
 
     fontSize: {
       nav: '1.6rem',
-      active: '1.7rem',
       title: '4.4rem',
       subtitle: '1.5rem',
-      promoTitle: '2.4rem',
       normal: '1.2rem',
+      footer: '2.0 rem',
     },
     letterSpacing: {
       londrina: '0.35rem',
