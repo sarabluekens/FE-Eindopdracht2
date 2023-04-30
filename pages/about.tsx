@@ -1,7 +1,9 @@
 import Navbar from '<pages>/components/Navbar'
 
 const About = () => {
-  return <></>
+  return <>
+  
+  </>
 }
 
 export default About

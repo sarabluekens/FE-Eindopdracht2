@@ -4,20 +4,20 @@ import Link from 'next/link'
 
 const Navbar = () => {
   return (
-    <nav className="sticky top-0 flex justify-between font-thin m-5">
-      <Link href="/">
+    <nav className="sticky top-14 flex h-0 items-center justify-between overflow-visible font-thin">
+      <Link href="/" className="m-14">
         <Image
-          src="logo1.svg"
+          src="/logo1.svg"
           alt="Logo Sara Bluekens brand"
           width={68}
           height={77}
         />
       </Link>
 
-      <ul className="flex ">
-        <NavItem href="/About" active={false} text="About" />
-        <NavItem href="/Projects" active={false} text="Projects" />
-        <NavItem href="/Contact" active={false} text="Contact" />
+      <ul className="m-5 flex items-center">
+        <NavItem href="/#AboutMe" active={false} text="About" />
+        <NavItem href="/#projects" active={false} text="Projects" />
+        <NavItem href="/contact" active={false} text="Contact" />
       </ul>
     </nav>
   )

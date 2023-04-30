@@ -6,7 +6,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="bg-blue text-white font-londrinaSolid">
+      <body className="bg-blue text-white">
         <Navbar />
         <Main />
         <Footer />
