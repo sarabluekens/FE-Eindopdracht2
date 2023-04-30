@@ -1,5 +1,13 @@
+import Navbar from '<pages>/components/Navbar'
+
 const About = () => {
-  return <p>Hello world this is the about page</p>
+  return (
+    <>
+      <nav>
+        <Navbar />
+      </nav>
+    </>
+  )
 }
 
 export default About

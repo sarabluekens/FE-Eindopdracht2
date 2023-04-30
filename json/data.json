@@ -1,20 +1,23 @@
 [
   {
     "id": 1,
-    "uid": "a15c1f1d-9e4e-4dc7-9c45-c04412fc5064",
-    "name": "Next.js",
-    "language": "JavaScript"
+    "title": "Jumping Jaws",
+    "promoText": "An endless runner game where two players need to jump on a trampoline to survive.",
+    "promoImage": "jumpingJawsPromo",
+    "promoAlt": "Jumping Jaws op de Facts Expo in Gent"
   },
   {
     "id": 2,
-    "uid": "a15c1f1d-9e4e-4dc7-9c45-c04412fc5064",
-    "name": "Next2.js",
-    "language": "HTML"
+    "title": "To the grave",
+    "promoText": "A horrifying quiz that determines how you will meet your end.",
+    "promoImage": "toTheGrave",
+    "promoAlt": "An online calculator of Death."
   },
   {
     "id": 3,
-    "uid": "a15c1f1d-9e4e-4dc7-9c45-c04412fc5064",
-    "name": "Next3.js",
-    "language": "CSS"
+    "title": "Led Lightroom",
+    "promoText": "An interactive lightroom where people change the lights by moving their body in the room.",
+    "promoImage": "lightroom",
+    "promoAlt": "3D of the lightroom with the light effects."
   }
 ]

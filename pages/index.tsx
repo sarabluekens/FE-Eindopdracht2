@@ -1,67 +1,100 @@
 import Image from 'next/image'
 import { Londrina_Solid } from 'next/font/google'
 import Navbar from '../components/Navbar'
-import getLocalData from '../lib/localdata'
+import ProjectPromo from '../components/ProjectPromo'
+import Footer from '../components/Footer'
 
 const londrinaSolid = Londrina_Solid({
   subsets: ['latin'],
   weight: ['100', '300', '400', '900'],
 })
 
-const Home = ({ data }: { data: [] }) => {
+const Home = ({ data }: { data: any }) => {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <nav>
         <Navbar />
       </nav>
 
-      <Image
-        className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-        src="/next.svg"
-        alt="Next.js Logo"
-        width={180}
-        height={37}
-        priority
-      />
+      <div
+        className="
+    w-screen
+    h-screen
+    bg-gradient-to-r
+    from-pink-500
+    via-red-500
+    to-yellow-500
+    background-animate
+  "
+      ></div>
+      <article>
+        <h2>About me</h2>
+        <p className=""> A Belgian creative soul</p>
 
-      <section>
-        <h2>Blog</h2>
-        {/* <ul>
-          {data.map(
-            ({
-              id,
-              name,
-              language,
-            }: {
-              id: number
-              name: string
-              language: string
-            }) => (
-              <li key={id}>
-                <b>
-                  {id} - {name}
-                </b>
-                <br />
-                {language}
-              </li>
-            ),
-          )}
-        </ul> */}
-      </section>
+        <p>
+          I'm (about to be) a full stack developer; with a love for design and
+          UX/UI.
+        </p>
+        <p>
+          I currently study in Flandres, but who knows where the future will
+          take me!
+        </p>
+        <p>
+          Creativity and experimenting is very important to me. I love being
+          challenged and racking my brain solving puzzles.
+        </p>
+
+        <p>
+          In my spare time you can find me creating stuff, in the broad sense of
+          the word. I dabble with sketching, painting, sculpting, wood crafts,
+          illustrations, animations, 3D modelling, games, installations... As
+          long as i can be creative.{' '}
+        </p>
+
+        <Image
+          src="/profile.png"
+          alt="profilepicture"
+          width={720}
+          height={148}
+        />
+      </article>
+
+      <article>
+        <h2>My projects</h2>
+        {data.map((project: any) => (
+          <ProjectPromo
+            key={project.id}
+            title={project.title}
+            promoImage={`/${project.promoImage}`}
+            promoText={project.promoText}
+            promoAlt={project.promoAlt}
+          />
+        ))}
+      </article>
+
+      <Footer />
     </main>
   )
 }
 
 export default Home
 
-// export const getStaticProps = async () => {
-//   //fetch the data from the local json file
-//   const data = await getLocalData()
+import fsPromises from 'fs/promises'
+import path from 'path'
 
-//   //return the data as props (object) in the home component
-//   return {
-//     props: {
-//       data,
-//     },
-//   }
-// }
+export const getStaticProps = async () => {
+  //get the file path of the json file
+  const filepath = path.join(process.cwd(), 'json/data.json')
+  //read the file
+  const jsonData = await fsPromises.readFile(filepath)
+
+  //parse the json data
+  const data = JSON.parse(jsonData.toString())
+
+  //return the data
+  return {
+    props: {
+      data,
+    },
+  }
+}
