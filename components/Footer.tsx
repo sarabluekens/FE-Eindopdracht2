@@ -6,7 +6,7 @@ import { BsFileEarmarkPdf } from 'react-icons/bs'
 const Footer = () => {
   return (
     <footer className="footer">
-      <p> Sara Bluekens</p>
+      <p className=""> Sara Bluekens</p>
       <p> &#169; 2023</p>
 
       <p>Sara.bluekens@skynet.be</p>

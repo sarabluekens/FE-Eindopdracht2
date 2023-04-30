@@ -9,9 +9,9 @@ const NavItem = ({
   active: boolean
 }) => {
   return (
-    <li>
+    <li className='px-3'> 
       <Link href={href} className={`nav__item ${active ? 'active' : ''}`}>
-        {text}
+        <p className="text-3xl">{text}</p>
       </Link>
     </li>
   )

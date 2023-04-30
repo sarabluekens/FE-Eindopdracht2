@@ -12,7 +12,7 @@ const ProjectPromo = ({
   promoAlt: string
 }) => {
   return (
-    <section>
+    <section className="">
       <Image
         src={`${promoImage}.png`}
         width={562}

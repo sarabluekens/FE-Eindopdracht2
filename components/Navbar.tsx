@@ -4,25 +4,22 @@ import Link from 'next/link'
 
 const Navbar = () => {
   return (
-    <>
-      <nav>
-        <Link href="/">
-          <Image
-            src="logo1.svg"
-            alt="Logo Sara Bluekens brand"
-            width={68}
-            height={77}
-          />
-        </Link>
+    <nav className="sticky top-0 flex justify-between font-thin m-5">
+      <Link href="/">
+        <Image
+          src="logo1.svg"
+          alt="Logo Sara Bluekens brand"
+          width={68}
+          height={77}
+        />
+      </Link>
 
-        <ul>
-          <NavItem href="/About" active={false} text="about" />
-          <NavItem href="/Projects" active={false} text="projects" />
-          <NavItem href="/Cv" active={false} text="cv" />
-          <NavItem href="/Contact" active={false} text="contact" />
-        </ul>
-      </nav>
-    </>
+      <ul className="flex ">
+        <NavItem href="/About" active={false} text="About" />
+        <NavItem href="/Projects" active={false} text="Projects" />
+        <NavItem href="/Contact" active={false} text="Contact" />
+      </ul>
+    </nav>
   )
 }
 

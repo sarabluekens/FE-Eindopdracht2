@@ -1,7 +1,7 @@
 import fsPromises from 'fs/promises'
 import path from 'path'
 
-const getLocalData = async (id: any) => {
+const getLocalData = async () => {
   //get the file path of the json file
   const filepath = path.join(process.cwd(), 'json/data.json')
   //read the file
