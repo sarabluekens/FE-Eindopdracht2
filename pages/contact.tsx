@@ -89,7 +89,7 @@ const Contact = () => {
     }
   }
   return (
-    <>
+    <div className="min-h-screen">
       <Navbar />
       <form onSubmit={handleSubmit} className="flex flex-col items-center ">
         <h1 className="my-1 text-center font-londrinaSolid text-thirdtitle font-thin tracking-londrina md:my-5 md:text-title">
@@ -117,7 +117,7 @@ const Contact = () => {
             name="fullname"
             value={fullname}
             onChange={e => setFullname(e.target.value)}
-            className="w-full border-b bg-blue py-2 pl-4 focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
+            className="w-full border-b bg-blue py-2 pl-4 ring-white focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
           />
           {errors?.fullname && (
             <p className="text-red">Fullname cannot be empty.</p>
@@ -129,7 +129,7 @@ const Contact = () => {
             name="email "
             value={email}
             onChange={e => setEmail(e.target.value)}
-            className="w-full border-b bg-blue py-2 pl-4 focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
+            className="w-full border-b bg-blue py-2 pl-4 ring-white focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
           />
           {errors?.email && <p className="text-red">email cannot be empty.</p>}
 
@@ -139,7 +139,7 @@ const Contact = () => {
             name="subject"
             value={subject}
             onChange={e => setSubject(e.target.value)}
-            className="w-full border-b bg-blue py-2 pl-4  focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
+            className="w-full border-b bg-blue py-2 pl-4  ring-white focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
           />
 
           {errors?.subject && (
@@ -151,7 +151,7 @@ const Contact = () => {
             name="message"
             value={message}
             onChange={e => setMessage(e.target.value)}
-            className="focus:rounded-m w-full border-b bg-blue py-2 pl-4 focus:text-white focus:outline-none focus:ring-1"
+            className="focus:rounded-m w-full border-b bg-blue py-2 pl-4 ring-white focus:text-white focus:outline-none focus:ring-1"
           />
           {errors?.message && (
             <p className="text-red">Message cannot be empty.</p>
@@ -166,7 +166,7 @@ const Contact = () => {
         </button>
       </form>
       <Footer />
-    </>
+    </div>
   )
 }
 

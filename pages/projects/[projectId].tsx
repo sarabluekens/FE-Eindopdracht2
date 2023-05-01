@@ -34,12 +34,12 @@ const project = ({ projectInfo }: { projectInfo: any }) => {
           ))}
           <div className=" mt-3 flex w-8/12 justify-end  md:mt-0">
             {projectInfo.codeLink && (
-              <Link href={projectInfo.codeLink}>
+              <Link target="_blank" href={projectInfo.codeLink}>
                 <FiGithub className="mx-2" size={24} color="#E4EFEE" />
               </Link>
             )}
             {projectInfo.externalLink && (
-              <Link href={projectInfo.externalLink}>
+              <Link target="_blank" href={projectInfo.externalLink}>
                 <FiExternalLink className="mx-2" size={24} color="#E4EFEE" />
               </Link>
             )}
