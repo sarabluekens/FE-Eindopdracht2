@@ -16,7 +16,7 @@ const ProjectPromo = ({
   promoImage: string
   promoAlt: string
   id: string
-  codeLink: string
+  codeLink?: string
   externalLink?: string
 }) => {
   return (
@@ -24,7 +24,7 @@ const ProjectPromo = ({
       <div className="rounded-lg  border-2 border-white pb-2 pl-2">
         <Image
           className="h-auto -translate-x-7 translate-y-7 rounded-lg "
-          src={`${promoImage}.png`}
+          src={`/${promoImage}.png`}
           width={562}
           height={562}
           alt={promoAlt}
@@ -39,9 +39,11 @@ const ProjectPromo = ({
         </p>
 
         <div className="my-5 flex w-2/3  justify-end">
-          <Link href={codeLink}>
-            <FiGithub className="mx-2" size={24} color="#E4EFEE" />
-          </Link>
+          {codeLink && (
+            <Link href={codeLink}>
+              <FiGithub className="mx-2" size={24} color="#E4EFEE" />
+            </Link>
+          )}
           {externalLink && (
             <Link href={externalLink}>
               <FiExternalLink className="mx-2" size={24} color="#E4EFEE" />

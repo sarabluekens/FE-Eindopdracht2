@@ -28,6 +28,7 @@ module.exports = {
       nav: '1.6rem',
       title: '4.4rem',
       subtitle: '1.5rem',
+      thirdtitle: '2.4rem',
       normal: '1.2rem',
       footer: '2.0 rem',
     },

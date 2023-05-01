@@ -1,7 +1,7 @@
 import fsPromises from 'fs/promises'
 import path from 'path'
 
-const getLocalData = async () => {
+export const getLocalData = async () => {
   //get the file path of the json file
   const filepath = path.join(process.cwd(), 'json/data.json')
   //read the file
@@ -14,4 +14,15 @@ const getLocalData = async () => {
   return data
 }
 
-export default getLocalData
+export const getLocalHobbyData = async () => {
+  //get the file path of the json file
+  const filepath = path.join(process.cwd(), 'json/hobbyData.json')
+  //read the file
+  const jsonData = await fsPromises.readFile(filepath)
+
+  //parse the json data
+  const hobbyData = JSON.parse(jsonData.toString())
+
+  //return the data
+  return hobbyData
+}

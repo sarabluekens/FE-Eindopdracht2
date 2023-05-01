@@ -1,11 +1,17 @@
 [
   {
     "id": 1,
+    "projectType": "career",
     "title": "Jumping Jaws",
     "promoText": "An endless runner game where two players need to jump on a trampoline to survive.",
     "promoImage": "jumpingJawsPromo",
     "promoAlt": "Jumping Jaws op de Facts Expo in Gent",
     "codeLink": "https://github.com/DauweQuinten/Trampoline_Groep2_FrontEnd",
+    "question": "This project was created for Sports innovation campus in Bruges. They asked us to create a digital application to encourage the youth to exercise more.  We were given trampolines by the client. ",
+    "solution": "In our solution we created an endless runner game that can be controlled by jumping on the trampoline. The game was created in Unity. The design was made in Figma. The backend existed of an Xbox Kinect where the jumps were detected and registrated with node.Js. The backend data was sent to the frontend through a websocket.",
+    "role": "I worked on this project with three other classmates. My role in this project was Ux/Ui Research, Design and  the frontend development of the game (in association with a frontend partner). The others worked on research, Ui implementation, communication with backend and the backend itself. ",
+    "gamePlay": "The game is a endless runner game where two players have to work together to steer a boat through a river full of obstacles. Every time the boat hits an obstacle it gets slowed down for a second. There is also a shark chasing them and as soon as he catches up with the boat the game ends. The goal of the game is to stay ahead of the shark for as long as possible.",
+    "aftermath": "In our demo and expo, where we set up the game for the public, we noticed that the setup often was a bit difficult to understand. Especially the calibration of the Players proved a very difficult part of the game. Once the people started playing the game itself, we found that they really liked it. They often played more then once to improve their high score. Even though the game was designed for the youth we found that adults liked it a lot as-well, which was really satisfying for us to see. ",
     "tags": [
       "Unity",
       "C#",
@@ -15,27 +21,39 @@
       "Xbox Kinect",
       "ESP"
     ],
-    "role": ["Frontend", "Research", "UX/UI", "Design"]
+    "roleTags": ["Frontend", "Research", "UX/UI", "Design"]
   },
   {
     "id": 2,
+    "projectType": "career",
     "title": "To the grave",
     "promoText": "A horrifying quiz that determines how you will meet your end.",
     "promoImage": "toTheGrave",
     "promoAlt": "An online calculator of Death.",
     "codeLink": "https://github.com/sarabluekens/calculator",
     "externalLink": "https://tothegrave.netlify.app/",
+    "question": "For a school project we were asked to build some sort of calculator. Where the input of the user, changed the outcome of the calculator.",
+    "solution": "I created a calculator that reveals how the user will meet their end, depending on their input. To lighten the mood a bit on this dark theme, I put some humor in it. And of course there is a little easter egg for my former teachers (hint: their names were “Benoit” and “Simon”). I created this app in React.  I worked with Components en Modules CSS. This site is hosted on Netlify.",
+    "role": "Since this was an inbetween assignment, I made this project by myself. I worked on Concept, UX, Design and Development. ",
+    "gamePlay": "Visitors enter the website on the homescreen. There they can choose between the calculator and a list of all the possible answers. If they go to the calculator they can fill in the questions and the answer will appear based on what people fill in. This all happens in live reload. No redirecting to other pages is required. ",
+    "aftermath": "This project has no intention of being used after the end of the assignment. The projects purpose was to practice the core concepts of React and get used to the best practices. This project helped me improve my React knowledge and usage for later projects. ",
     "tags": ["React", "Javascript", "HTML/CSS", "Netlify"],
-    "role": ["Frontend", "Design"]
+    "roleTags": ["Frontend", "Design"]
   },
   {
     "id": 3,
+    "projectType": "career",
     "title": "Led Lightroom",
     "promoText": "An interactive lightroom where people change the lights by moving their body in the room.",
     "promoImage": "lightroom",
     "promoAlt": "3D of the lightroom with the light effects.",
     "codeLink": "https://github.com/sarabluekens/Bap-SmileSafari",
     "externalLink": "https://www.behance.net/gallery/150697827/Sunset-Room-An-immersive-lightroom-for-Smile-Safari?tracking_source=search_projects%7Csmile+safari",
+    "question": "For my bachelor thesis I worked with two other classmates on a project for Smile Safari. They asked us to create an interactive digital room, where people could take lots of pictures for social media. Most important for our client was that it was interactive and resulted in great pictures.",
+    "solution": "We created an emersive lightroom with ledstrips and Arduino Uno board. These ledstrips were hung on the wall to guide the visitors into the room. We also used a Led matrix in combination with an arduino board to create our big led background, which was curved to avoid sharp corners on the photo. Lastly we used a Kinect Azure with Touchdesigner software to transfer real life feed to a led matrix giving control to the visiters",
+    "role": "My role in this project was as wel Research the target audience as well as the best UX for the room. Aside from my research role I was also the lead creative developer working with all the Arduino and led strips/matrix and Touchdesigner software. ",
+    "gamePlay": "The room is designed to give every visitor a unique and social media worthy experience. Visitors would enter the room seeing a dark hallway. When they move the led strips they pass would flash on creating a tunnel of light that follows them. Once they reach the end of the room a Kinect will detect the visitors and register their movements. TouchDesigner will then transfer the movements to a led matrix, creating a magical interactive background. ",
+    "aftermath": "For our bachelor thesis we made a prototype, maquette and 3D render of the room. The owner of Smile Safari also came to our final presentation. After the presentation Smile Safari contacted us for more information and the specific schemes of our installation. We were told they plan on really building the room in their museums. Until this day we still excitedly await notification that our room has actually been build for real.",
     "tags": [
       "Arduino",
       "TouchDesigner",
@@ -43,29 +61,50 @@
       "Javascript",
       "Xbox Kinect"
     ],
-    "role": ["Research", "UX/UI", "Creative Development"]
+    "roleTags": ["Research", "UX/UI", "Creative Development"]
   },
 
   {
     "id": 4,
+    "projectType": "career",
     "title": "A Write for sore eyes",
     "promoText": "A web application the allows you to write out what you’re feeling. The website adjusts according to your mood.",
     "promoImage": "personal",
     "promoAlt": "Homescreen of the website.",
     "codeLink": "https://github.com/sarabluekens/personal",
     "externalLink": "https://sleepy-jones-731a03.netlify.app/",
+    "question": "We were asked to create a React project, where the input of the user had influence on the output that another user would receive. ",
+    "solution": "In my solution I created an app where visitors can write out their emotions. They simplty select an emotion and start writing whatever needs to get off their chest. After they press the button the link of the letter is generated and shown. Important detail: the emotion they choose when writing the letter decides the design of the letter that gets send. ",
+    "role": "Since this was an inbetween assignment, I made this project by myself. I worked on Concept, UX, Design and Development. ",
+    "gamePlay": "Visitors come to the website to write out their worries. There is no obligation to share what they write with anybody. This app is meant to let people get what bothers them off their chest. If however, people decide to share the letter with someone else; they can send the link, that is automatically generated and shown with the person to read it. The letter that the other person receives is designed according to the emotion of the author. ",
+    "aftermath": "This project has no intention of being used after the end of the assignment. The projects purpose was to practice the core concepts of React and get used to the best practices. This project helped me improve my React knowledge and usage for later projects. ",
     "tags": ["React", "Next.js", "Netlify", "Design"],
-    "role": ["Frontend", "Research", "Design"]
+    "roleTags": ["Frontend", "Research", "Design"]
   },
   {
     "id": 5,
+    "projectType": "hobby",
     "title": "Sneaky Sam",
-    "promoText": "An endless runner game that is controlled with the movement of the players head.",
+    "promoText": "An endless runner game that is controlled with the movement of the player's head.",
     "promoImage": "sam",
     "promoAlt": "Startscreen of the game in Unity.",
     "codeLink": "https://github.com/sarabluekens/PassionProjectHerex",
     "externalLink": "https://www.sarabluekens.be/passion/sam2/",
-    "tags": ["Unity", "C#", "UX/UI", "Sound", "Javascript", "TensorFlow"],
-    "role": ["Frontend", "Backend", "Design"]
+    "experiment": "Sneaky sam is a project where i experimented with Machine Learning and a game development platform. Some sort of live feed was required for this experiment.",
+    "result": "I made an endless runner game in Unity. The player has to control the character by moving his head in front of the webcam of the laptop. The input from the webcom is processed by Tensorflow. Tensorflow tracks the position of the head (in this case the left eye) and uses this data to steer the character between lanes. The character kan also jump by moving upwards with the head",
+    "aftermath": "It is a fun and simple game. There are still a few bugs in there, but it was very interesting to see how Tensorflow en Unity work. And especially how you can combine these together to transform output from Tensorflow to input for Unity.  I will definitely use this in future projects. I had a blast.",
+    "tags": ["Unity", "C#", "UX/UI", "Sound", "Javascript", "TensorFlow"]
+  },
+  {
+    "id": 6,
+    "projectType": "hobby",
+    "title": "3D Print",
+    "promoText": "A keychain I modelled and printed myself.",
+    "promoImage": "print",
+    "promoAlt": "Startscreen of the game in Unity.",
+    "experiment": "I was able to experiment with a 3D printer.  Decided to make a keychain.  But instead of just printing a rectangle I wanted to do something special",
+    "result": "I created (3D modelled) a cat. This was made using the 3D printers software.  It has been a while because of which I don’t really remember the name of the software. I used an Image as reference and then sculpted a flat 3D model of a cat. ",
+    "aftermath": "The 3D modelling is a lot of work and very time consuming, but the 3D print totally makes it worth its time. While I had a fair share of frustrations during the modelling, I enjoyed the overall process. The satisfying result of having your 3D model makes it all so much more fun. In the end my keychain was not really a keychain anymore, but that’s oke. I learned a lot, which was the goal after all.",
+    "tags": ["3D print"]
   }
 ]

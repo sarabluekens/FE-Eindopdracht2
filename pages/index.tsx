@@ -57,18 +57,21 @@ const Home = ({ data }: { data: any }) => {
           className="mx-28 my-32 flex flex-col justify-between "
         >
           <PromoHeader title="My projects" />
-          {data.map((project: any) => (
-            <ProjectPromo
-              key={project.id}
-              id={project.id}
-              title={project.title}
-              promoImage={`/${project.promoImage}`}
-              promoText={project.promoText}
-              promoAlt={project.promoAlt}
-              codeLink={project.codeLink}
-              externalLink={project.externalLink}
-            />
-          ))}
+          {data.map(
+            (project: any) =>
+              project.projectType === 'career' && (
+                <ProjectPromo
+                  key={project.id}
+                  id={project.id}
+                  title={project.title}
+                  promoImage={project.promoImage}
+                  promoText={project.promoText}
+                  promoAlt={project.promoAlt}
+                  codeLink={project.codeLink}
+                  externalLink={project.externalLink}
+                />
+              ),
+          )}
         </article>
 
         <article
@@ -76,18 +79,21 @@ const Home = ({ data }: { data: any }) => {
           className="mx-28 my-32 flex flex-col justify-between "
         >
           <PromoHeader title="Hobby projects" />
-          {data.map((project: any) => (
-            <ProjectPromo
-              key={project.id}
-              id={project.id}
-              title={project.title}
-              promoImage={`/${project.promoImage}`}
-              promoText={project.promoText}
-              promoAlt={project.promoAlt}
-              codeLink={project.codeLink}
-              externalLink={project.externalLink}
-            />
-          ))}
+          {data.map(
+            (project: any) =>
+              project.projectType === 'hobby' && (
+                <ProjectPromo
+                  key={project.id}
+                  id={project.id}
+                  title={project.title}
+                  promoImage={project.promoImage}
+                  promoText={project.promoText}
+                  promoAlt={project.promoAlt}
+                  codeLink={project.codeLink}
+                  externalLink={project.externalLink}
+                />
+              ),
+          )}
         </article>
       </main>
     </div>
@@ -96,7 +102,7 @@ const Home = ({ data }: { data: any }) => {
 
 export default Home
 
-import getLocalData from '../lib/localdata'
+import { getLocalData } from '../lib/localdata'
 
 export const getStaticProps = async () => {
   const data = await getLocalData()

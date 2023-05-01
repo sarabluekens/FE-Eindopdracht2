@@ -27,7 +27,7 @@ const Hero = () => {
       </div>
       <Image
         id="AboutMe"
-        className="absolute -bottom-14 justify-end"
+        className="z-1 absolute -bottom-14 justify-end"
         src="/heroName.svg"
         width={1400}
         height={470}
