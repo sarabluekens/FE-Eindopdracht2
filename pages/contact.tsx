@@ -91,7 +91,10 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <form onSubmit={handleSubmit} className="flex flex-col items-center ">
+      <form
+        onSubmit={handleSubmit}
+        className="flex flex-col items-center pt-2 md:pt-20 "
+      >
         <h1 className="my-1 text-center font-londrinaSolid text-thirdtitle font-thin tracking-londrina md:my-5 md:text-title">
           Interested?
         </h1>
