@@ -31,7 +31,7 @@
     "promoImage": "toTheGrave",
     "promoAlt": "An online calculator of Death.",
     "codeLink": "https://github.com/sarabluekens/calculator",
-    "externalLink": "https://tothegrave.netlify.app/",
+    "externalLink": "https://bucolic-bombolone-d6b837.netlify.app/",
     "question": "For a school project we were asked to build some sort of calculator. Where the input of the user, changed the outcome of the calculator.",
     "solution": "I created a calculator that reveals how the user will meet their end, depending on their input. To lighten the mood a bit on this dark theme, I put some humor in it. And of course there is a little easter egg for my former teachers (hint: their names were “Benoit” and “Simon”). I created this app in React.  I worked with Components en Modules CSS. This site is hosted on Netlify.",
     "role": "Since this was an inbetween assignment, I made this project by myself. I worked on Concept, UX, Design and Development. ",
