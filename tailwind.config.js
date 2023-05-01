@@ -13,6 +13,7 @@ module.exports = {
       gradient1: '#5F0B7F',
       gradient2: '#752C55',
       gradient3: '#77622B',
+      red: '#FF0000',
     },
     fontFamily: {
       londrinaSolid: ['Londrina Solid', 'sans-serif'],

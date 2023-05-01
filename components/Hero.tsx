@@ -12,9 +12,9 @@ const Hero = () => {
     items-center justify-center bg-gradient-to-r font-londrinaSolid"
     >
       <div className=" -mt-20 flex flex-col">
-        <p className="text-title font-thin tracking-londrina">
+        <h1 className="text-title font-thin tracking-londrina">
           Digital developer
-        </p>
+        </h1>
         <Link
           href="/cv.pdf"
           download
