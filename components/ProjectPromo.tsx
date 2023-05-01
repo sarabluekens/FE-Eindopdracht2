@@ -20,21 +20,21 @@ const ProjectPromo = ({
   externalLink?: string
 }) => {
   return (
-    <section className="mx-5 my-20 flex flex-1 items-center justify-around">
-      <div className="rounded-lg  border-2 border-white pb-2 pl-2">
+    <section className="mx-1 md:mx-5 my-20 flex flex-1 flex-col items-center justify-around lg:flex-row">
+      <div className="rounded-lg border-2 border-white pb-2 pl-2">
         <Image
-          className="h-auto -translate-x-7 translate-y-7 rounded-lg "
+          className="h-auto md:-translate-x-7 md:translate-y-7 -translate-x-4 translate-y-4 rounded-lg "
           src={`/${promoImage}.png`}
           width={562}
           height={562}
           alt={promoAlt}
         />
       </div>
-      <div className="w-1/3">
-        <h3 className="mb-5 font-londrinaSolid text-title font-thin tracking-londrina">
+      <div className="ml-5 lg:ml-10 lg:w-1/3">
+        <h3 className="mt-10 font-londrinaSolid text-thirdtitle font-thin  tracking-londrina md:mb-5 lg:mt-1 lg:text-title">
           {title}
         </h3>
-        <p className=" text-mono font-sans w-4/5 text-normal tracking-mono tracking-mono">
+        <p className=" text-mono text-sm font-sans w-4/5 tracking-mono tracking-mono md:text-normal ">
           {promoText}
         </p>
 

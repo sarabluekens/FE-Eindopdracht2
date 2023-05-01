@@ -8,12 +8,13 @@ module.exports = {
   theme: {
     colors: {
       blue: '#05031D',
-      white: '#E4EFEE',
+      white: '#D0D7E0',
       grey: '#666575',
       gradient1: '#5F0B7F',
       gradient2: '#752C55',
       gradient3: '#77622B',
       red: '#FF0000',
+      green: '#0A5808',
     },
     fontFamily: {
       londrinaSolid: ['Londrina Solid', 'sans-serif'],
@@ -28,8 +29,10 @@ module.exports = {
     fontSize: {
       nav: '1.6rem',
       title: '4.4rem',
-      subtitle: '1.5rem',
+      smalltitle: '3.2rem',
       thirdtitle: '2.4rem',
+      sm: '1rem',
+      subtitle: '1.5rem',
       normal: '1.2rem',
       footer: '2.0 rem',
     },

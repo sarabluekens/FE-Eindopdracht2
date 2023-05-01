@@ -7,7 +7,7 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi'
 const project = ({ projectInfo }: { projectInfo: any }) => {
   return (
     <article className="flex flex-col items-center justify-center">
-      <h1 className="my-5 font-londrinaSolid text-title font-thin tracking-londrina">
+      <h1 className="my-5 font-londrinaSolid text-thirdtitle md:text-title text-center font-thin tracking-londrina">
         {projectInfo.title}
       </h1>
       <Image
@@ -19,7 +19,7 @@ const project = ({ projectInfo }: { projectInfo: any }) => {
         className="mb-5"
       />
 
-      <div className="flex w-7/12 justify-start">
+      <div className="flex w-7/12 justify-center md:justify-start flex-wrap">
         {projectInfo.tags.map((tag: string) => (
           <div
             className="m-1 bg-gradient-to-r from-gradient1 via-gradient2 to-gradient3 p-1"
@@ -28,7 +28,7 @@ const project = ({ projectInfo }: { projectInfo: any }) => {
             <p className="text-white">{tag}</p>
           </div>
         ))}
-        <div className=" flex w-8/12  justify-end">
+        <div className=" flex w-8/12 mt-3 md:mt-0  justify-end">
           {projectInfo.codeLink && (
             <Link href={projectInfo.codeLink}>
               <FiGithub className="mx-2" size={24} color="#E4EFEE" />
@@ -41,7 +41,7 @@ const project = ({ projectInfo }: { projectInfo: any }) => {
           )}
         </div>
       </div>
-      <section className="mb-10 w-7/12">
+      <section className="mb-10 w-9/12 md:w-7/12">
         <h3 className="hidden">Case file info</h3>
         {projectInfo.question && (
           <CaseBlock title="Question" text={projectInfo.question} />

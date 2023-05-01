@@ -1,4 +1,4 @@
-import { FormEventHandler, useState } from 'react'
+import { useState } from 'react'
 
 const Contact = () => {
   const [fullname, setFullname] = useState('')
@@ -88,17 +88,32 @@ const Contact = () => {
   }
   return (
     <form onSubmit={handleSubmit} className="flex flex-col items-center ">
-      <h1 className="my-5 font-londrinaSolid text-title font-thin tracking-londrina">
-        Interested? <br /> Send me a message!
+      <h1 className="my-1 text-center font-londrinaSolid text-thirdtitle font-thin tracking-londrina md:my-5 md:text-title">
+        Interested?
       </h1>
-      <div className="flex w-5/12 flex-col items-start gap-5 border-2 p-5  ">
+      <p className="my-5 text-center font-londrinaSolid text-footer font-thin tracking-londrina md:-mt-5 md:text-thirdtitle">
+        Send me an email
+      </p>
+      <div className="text-left">
+        {showSuccessMessage && (
+          <p className="font-semibold my-2 text-sm text-green">
+            Thank you! <br /> Your Message has been delivered.
+          </p>
+        )}
+        {showFailureMessage && (
+          <p className="text-red">
+            Oops! Something went wrong, please try again.
+          </p>
+        )}
+      </div>
+      <div className="flex w-10/12 flex-col items-start gap-5 border-2 p-5 md:w-6/12 xl:w-[600px] ">
         <label htmlFor="fullname">Full Name</label>
         <input
           type="text"
           name="fullname"
           value={fullname}
           onChange={e => setFullname(e.target.value)}
-          className="border-b bg-blue py-2 pl-4 focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
+          className="w-full border-b bg-blue py-2 pl-4 focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
         />
         {errors?.fullname && (
           <p className="text-red">Fullname cannot be empty.</p>
@@ -110,7 +125,7 @@ const Contact = () => {
           name="email "
           value={email}
           onChange={e => setEmail(e.target.value)}
-          className="border-b bg-blue py-2 pl-4 focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
+          className="w-full border-b bg-blue py-2 pl-4 focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
         />
         {errors?.email && <p className="text-red">email cannot be empty.</p>}
 
@@ -120,7 +135,7 @@ const Contact = () => {
           name="subject"
           value={subject}
           onChange={e => setSubject(e.target.value)}
-          className="border-b bg-blue py-2 pl-4  focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
+          className="w-full border-b bg-blue py-2 pl-4  focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
         />
 
         {errors?.subject && (
@@ -132,7 +147,7 @@ const Contact = () => {
           name="message"
           value={message}
           onChange={e => setMessage(e.target.value)}
-          className="focus:rounded-m border-b bg-blue py-2 pl-4 focus:text-white focus:outline-none focus:ring-1"
+          className="focus:rounded-m w-full border-b bg-blue py-2 pl-4 focus:text-white focus:outline-none focus:ring-1"
         />
         {errors?.message && (
           <p className="text-red">Message cannot be empty.</p>
@@ -145,18 +160,6 @@ const Contact = () => {
       >
         Send
       </button>
-      <div className="text-left">
-        {showSuccessMessage && (
-          <p className="text-green-500 font-semibold text-sm my-2">
-            Thankyou! Your Message has been delivered.
-          </p>
-        )}
-        {showFailureMessage && (
-          <p className="text-red">
-            Oops! Something went wrong, please try again.
-          </p>
-        )}
-      </div>
     </form>
   )
 }

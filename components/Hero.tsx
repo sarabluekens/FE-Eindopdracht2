@@ -11,27 +11,28 @@ const Hero = () => {
         flex-col
     items-center justify-center bg-gradient-to-r font-londrinaSolid"
     >
-      <div className=" -mt-20 flex flex-col">
-        <h1 className="text-title font-thin tracking-londrina">
+      <div className="-mt-20 flex flex-col">
+        <h1 className="text-center text-smalltitle font-thin tracking-londrina md:text-title">
           Digital developer
         </h1>
         <Link
           href="/cv.pdf"
           download
-          className="self-end rounded-lg border-b-4 border-l-2 border-r-4 border-t-2 border-solid border-blue px-4 py-2"
+          className="hidden self-end rounded-lg border-b-4 border-l-2 border-r-4 border-t-2 border-solid border-blue px-4 py-2 md:inline"
         >
-          <p className="text-thin text-nav tracking-londrina text-blue">
+          <p className="text-thin text-nav tracking-londrina text-blue ">
             Download CV
           </p>
         </Link>
       </div>
       <Image
         id="AboutMe"
-        className="z-1 absolute -bottom-14 justify-end"
+        className="z-1 absolute bottom-1 h-auto w-10/12 justify-end md:-bottom-14"
         src="/heroName.svg"
-        width={1400}
-        height={470}
+        width="0"
+        height="0"
         alt="Sara Bluekens naam"
+        priority
       />
     </header>
   )
