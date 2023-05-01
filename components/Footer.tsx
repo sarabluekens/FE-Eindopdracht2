@@ -6,7 +6,7 @@ import Divider from './Divider'
 
 const Footer = () => {
   return (
-    <>
+    <div className="mt-auto">
       <Divider />
       <footer className=" my-10 grid grid-flow-col grid-cols-1 grid-rows-6 content-center justify-items-center sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-3 md:grid-rows-2">
         <p className="font-londrinaSolid text-normal font-normal tracking-londrina lg:text-nav">
@@ -43,7 +43,7 @@ const Footer = () => {
           Frontend development
         </p>
       </footer>
-    </>
+    </div>
   )
 }
 
