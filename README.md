@@ -6,6 +6,7 @@ De portfolio is responsive en scale vriendelijk uitgewerkt.
 ### Next.JS
 
 Dit project heb ik uitgewerkt met Next.js.
+Een framework van React.
 
 ### Tailwind
 
