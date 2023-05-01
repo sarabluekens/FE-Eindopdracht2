@@ -1,3 +1,5 @@
+import Footer from '../components/Footer'
+import Navbar from '../components/Navbar'
 import { useState } from 'react'
 
 const Contact = () => {
@@ -87,80 +89,84 @@ const Contact = () => {
     }
   }
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col items-center ">
-      <h1 className="my-1 text-center font-londrinaSolid text-thirdtitle font-thin tracking-londrina md:my-5 md:text-title">
-        Interested?
-      </h1>
-      <p className="my-5 text-center font-londrinaSolid text-footer font-thin tracking-londrina md:-mt-5 md:text-thirdtitle">
-        Send me an email
-      </p>
-      <div className="text-left">
-        {showSuccessMessage && (
-          <p className="font-semibold my-2 text-sm text-green">
-            Thank you! <br /> Your Message has been delivered.
-          </p>
-        )}
-        {showFailureMessage && (
-          <p className="text-red">
-            Oops! Something went wrong, please try again.
-          </p>
-        )}
-      </div>
-      <div className="flex w-10/12 flex-col items-start gap-5 border-2 p-5 md:w-6/12 xl:w-[600px] ">
-        <label htmlFor="fullname">Full Name</label>
-        <input
-          type="text"
-          name="fullname"
-          value={fullname}
-          onChange={e => setFullname(e.target.value)}
-          className="w-full border-b bg-blue py-2 pl-4 focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
-        />
-        {errors?.fullname && (
-          <p className="text-red">Fullname cannot be empty.</p>
-        )}
+    <>
+      <Navbar />
+      <form onSubmit={handleSubmit} className="flex flex-col items-center ">
+        <h1 className="my-1 text-center font-londrinaSolid text-thirdtitle font-thin tracking-londrina md:my-5 md:text-title">
+          Interested?
+        </h1>
+        <p className="my-5 text-center font-londrinaSolid text-footer font-thin tracking-londrina md:-mt-5 md:text-thirdtitle">
+          Send me an email
+        </p>
+        <div className="text-left">
+          {showSuccessMessage && (
+            <p className="font-semibold my-2 text-sm text-green">
+              Thank you! <br /> Your Message has been delivered.
+            </p>
+          )}
+          {showFailureMessage && (
+            <p className="text-red">
+              Oops! Something went wrong, please try again.
+            </p>
+          )}
+        </div>
+        <div className="flex w-10/12 flex-col items-start gap-5 border-2 p-5 md:w-6/12 xl:w-[600px] ">
+          <label htmlFor="fullname">Full Name</label>
+          <input
+            type="text"
+            name="fullname"
+            value={fullname}
+            onChange={e => setFullname(e.target.value)}
+            className="w-full border-b bg-blue py-2 pl-4 focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
+          />
+          {errors?.fullname && (
+            <p className="text-red">Fullname cannot be empty.</p>
+          )}
 
-        <label htmlFor="email">E-mail</label>
-        <input
-          type="email"
-          name="email "
-          value={email}
-          onChange={e => setEmail(e.target.value)}
-          className="w-full border-b bg-blue py-2 pl-4 focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
-        />
-        {errors?.email && <p className="text-red">email cannot be empty.</p>}
+          <label htmlFor="email">E-mail</label>
+          <input
+            type="email"
+            name="email "
+            value={email}
+            onChange={e => setEmail(e.target.value)}
+            className="w-full border-b bg-blue py-2 pl-4 focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
+          />
+          {errors?.email && <p className="text-red">email cannot be empty.</p>}
 
-        <label htmlFor="subject">Subject</label>
-        <input
-          type="text"
-          name="subject"
-          value={subject}
-          onChange={e => setSubject(e.target.value)}
-          className="w-full border-b bg-blue py-2 pl-4  focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
-        />
+          <label htmlFor="subject">Subject</label>
+          <input
+            type="text"
+            name="subject"
+            value={subject}
+            onChange={e => setSubject(e.target.value)}
+            className="w-full border-b bg-blue py-2 pl-4  focus:rounded-md focus:text-white focus:outline-none focus:ring-1"
+          />
 
-        {errors?.subject && (
-          <p className="text-red">Subject cannot be empty.</p>
-        )}
+          {errors?.subject && (
+            <p className="text-red">Subject cannot be empty.</p>
+          )}
 
-        <label htmlFor="message">Message</label>
-        <textarea
-          name="message"
-          value={message}
-          onChange={e => setMessage(e.target.value)}
-          className="focus:rounded-m w-full border-b bg-blue py-2 pl-4 focus:text-white focus:outline-none focus:ring-1"
-        />
-        {errors?.message && (
-          <p className="text-red">Message cannot be empty.</p>
-        )}
-      </div>
+          <label htmlFor="message">Message</label>
+          <textarea
+            name="message"
+            value={message}
+            onChange={e => setMessage(e.target.value)}
+            className="focus:rounded-m w-full border-b bg-blue py-2 pl-4 focus:text-white focus:outline-none focus:ring-1"
+          />
+          {errors?.message && (
+            <p className="text-red">Message cannot be empty.</p>
+          )}
+        </div>
 
-      <button
-        type="submit"
-        className="mt-5 rounded-lg border-2 border-solid border-white px-4 py-2"
-      >
-        Send
-      </button>
-    </form>
+        <button
+          type="submit"
+          className="mt-5 rounded-lg border-2 border-solid border-white px-4 py-2"
+        >
+          Send
+        </button>
+      </form>
+      <Footer />
+    </>
   )
 }
 

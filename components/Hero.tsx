@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const Hero = () => {
   return (
-    <header
+    <div
       className="background-animate 
         flex
         h-screen
@@ -34,7 +34,7 @@ const Hero = () => {
         alt="Sara Bluekens naam"
         priority
       />
-    </header>
+    </div>
   )
 }
 

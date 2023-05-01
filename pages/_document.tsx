@@ -7,9 +7,8 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body className="bg-blue text-white">
-        <Navbar />
         <Main />
-        <Footer />
+
         <NextScript />
       </body>
     </Html>
