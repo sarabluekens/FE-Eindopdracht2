@@ -24,7 +24,7 @@ const Home = ({ data }: { data: any }) => {
 
               <p className=" font-sans mb-4 tracking-mono md:text-normal ">
                 I'm a<span className="font-thin"> full stack developer </span>
-                with a love for design and UX/UI.
+                with a love for UX/UI and creative development.
               </p>
               <p className="font-sans mb-4 tracking-mono md:text-normal ">
                 I currently study in Flandres, but who knows where the future

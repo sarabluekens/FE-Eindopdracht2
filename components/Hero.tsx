@@ -16,7 +16,7 @@ const Hero = () => {
           Digital developer
         </h1>
         <Link
-          href="/cv.pdf"
+          href="/cvUpdated.pdf"
           download
           className="hidden self-end rounded-lg border-b-4 border-l-2 border-r-4 border-t-2 border-solid border-blue px-4 py-2 md:inline"
         >
