@@ -31,17 +31,10 @@ const Footer = () => {
           >
             <CiLinkedin size={30} />
           </Link>
-          <a className="mx-2" href="/cv.pdf" download>
+          <a className="mx-2" href="/cv_new.pdf" download>
             <BsFileEarmarkPdf size={24} />
           </a>
         </div>
-
-        <p className=" font-londrinaSolid text-normal font-normal tracking-londrina lg:text-nav">
-          Howest MCT
-        </p>
-        <p className="font-londrinaSolid text-normal font-thin tracking-londrina  lg:text-nav">
-          Frontend development
-        </p>
       </footer>
     </div>
   )
