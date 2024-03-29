@@ -65,48 +65,51 @@ const Home = ({ data }: { data: any }) => {
             </div>
           </article>
 
-          <article
-            id="projects"
-            className=" mx-8 my-16 flex flex-col justify-between md:mx-28 md:my-32 "
-          >
+          <article id="projects" className=" mx-8 my-16 md:mx-28 md:my-32 ">
             <PromoHeader title="My projects" />
-            {data.map(
-              (project: any) =>
-                project.projectType === 'career' && (
-                  <ProjectPromo
-                    key={project.id}
-                    id={project.id}
-                    title={project.title}
-                    promoImage={project.promoImage}
-                    promoText={project.promoText}
-                    promoAlt={project.promoAlt}
-                    codeLink={project.codeLink}
-                    externalLink={project.externalLink}
-                  />
-                ),
-            )}
+            <section className="grid-rows-auto grid grid-cols-2 gap-2">
+              <h2 className="hidden">Projects</h2>
+              {data.map(
+                (project: any) =>
+                  project.projectType === 'career' && (
+                    <ProjectPromo
+                      key={project.id}
+                      id={project.id}
+                      title={project.title}
+                      promoImage={project.promoImage}
+                      promoText={project.promoText}
+                      promoAlt={project.promoAlt}
+                      codeLink={project.codeLink}
+                      externalLink={project.externalLink}
+                    />
+                  ),
+              )}
+            </section>
           </article>
 
           <article
             id="hobbyProjects"
-            className=" mx-8 my-16 flex flex-col justify-between md:mx-28 md:my-32 "
+            className=" mx-8 my-16 md:mx-28 md:my-32 "
           >
             <PromoHeader title="Hobby projects" />
-            {data.map(
-              (project: any) =>
-                project.projectType === 'hobby' && (
-                  <ProjectPromo
-                    key={project.id}
-                    id={project.id}
-                    title={project.title}
-                    promoImage={project.promoImage}
-                    promoText={project.promoText}
-                    promoAlt={project.promoAlt}
-                    codeLink={project.codeLink}
-                    externalLink={project.externalLink}
-                  />
-                ),
-            )}
+            <section className="grid-rows-auto grid grid-cols-2 gap-2">
+              <h2 className="hidden">Hobby Projects</h2>
+              {data.map(
+                (project: any) =>
+                  project.projectType === 'hobby' && (
+                    <ProjectPromo
+                      key={project.id}
+                      id={project.id}
+                      title={project.title}
+                      promoImage={project.promoImage}
+                      promoText={project.promoText}
+                      promoAlt={project.promoAlt}
+                      codeLink={project.codeLink}
+                      externalLink={project.externalLink}
+                    />
+                  ),
+              )}
+            </section>
           </article>
         </main>
       </div>
