@@ -63,9 +63,8 @@ const Navbar = () => {
           } md:mt-0 md:block md:pb-0`}
         >
           <ul className="m-5 flex flex-col items-end  md:flex-row ">
-            <NavItem href="/#AboutMe" text="About" />
-            <NavItem href="/#projects" text="Projects" />
-            <NavItem href="/contact" text="Contact" />
+            <NavItem href="/#AboutMe" text="About me" />
+            <NavItem href="/#projects" text="My projects" />
           </ul>
         </div>
       </div>

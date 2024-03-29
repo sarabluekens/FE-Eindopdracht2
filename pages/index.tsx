@@ -22,26 +22,35 @@ const Home = ({ data }: { data: any }) => {
                 A Belgian creative soul
               </p>
 
-              <p className=" font-sans mb-4 tracking-mono md:text-normal ">
-                I'm a<span className="font-thin"> full stack developer </span>
+              <p className=" mb-4 font-normal tracking-mono md:text-normal ">
+                I'm a
+                <span className="bg-darkGradient3 font-semibold">
+                  {' '}
+                  full stack developer{' '}
+                </span>
                 with a love for UX/UI and creative development.
               </p>
-              <p className="font-sans mb-4 tracking-mono md:text-normal ">
+              <p className="mb-4 font-normal tracking-mono md:text-normal ">
                 I currently study in Flandres, but who knows where the future
                 will take me!
               </p>
-              <p className="font-sans mb-4 tracking-mono md:text-normal">
-                Creativity and experimenting is very important to me.
-                <span className="font-thin"> I love being challenged </span>
+              <p className="mb-4 font-normal tracking-mono md:text-normal">
+                Creativity and experimenting is very important to me.{' '}
+                <span className="bg-darkGradient2 font-semibold">
+                  I love being challenged
+                </span>{' '}
                 and racking my brain solving puzzles.
               </p>
 
-              <p className="font-sans mb-4 tracking-mono md:text-normal ">
+              <p className="mb-4 font-normal tracking-mono md:text-normal ">
                 In my spare time you can find me
-                <span className="font-thin"> creating stuff </span>, in the
-                broad sense of the word. I dabble with sketching, painting,
-                sculpting, wood crafts, illustrations, animations, 3D modelling,
-                games, installations... As long as i can be creative.
+                <span className="bg-darkGradient1 font-semibold">
+                  {' '}
+                  creating stuff{' '}
+                </span>
+                , in the broad sense of the word. I dabble with sketching,
+                painting, sculpting, wood crafts, illustrations, animations, 3D
+                modelling, games, installations... As long as i can be creative.
               </p>
             </div>
             <div>

@@ -13,6 +13,9 @@ module.exports = {
       gradient1: '#5F0B7F',
       gradient2: '#752C55',
       gradient3: '#77622B',
+      darkGradient3: '#3D133B',
+      darkGradient2: '#31054B',
+      darkGradient1: '#3E2432',
       red: '#FF0000',
       green: '#0A5808',
     },
@@ -22,14 +25,15 @@ module.exports = {
     },
     fontWeight: {
       thin: 100,
-      normal: 400,
+      normal: 300,
+      semibold: 600,
       bold: 900,
     },
 
     fontSize: {
       nav: '1.6rem',
-      title: '4.4rem',
-      smalltitle: '3.2rem',
+      title: '3rem',
+      smalltitle: '2.7rem',
       thirdtitle: '2.4rem',
       sm: '1rem',
       subtitle: '1.5rem',
