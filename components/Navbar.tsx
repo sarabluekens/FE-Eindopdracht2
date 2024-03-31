@@ -64,7 +64,7 @@ const Navbar = () => {
         >
           <ul className="m-5 flex flex-col items-end  md:flex-row ">
             <NavItem href="/#AboutMe" text="About me" />
-            <NavItem href="/#projects" text="My projects" />
+            <NavItem href="/projects" text="My projects" />
           </ul>
         </div>
       </div>

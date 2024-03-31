@@ -23,11 +23,10 @@ const Home = ({ data }: { data: any }) => {
               </p>
 
               <p className=" mb-4 font-normal tracking-mono md:text-normal ">
-                I'm a
+                I'm a{' '}
                 <span className="bg-darkGradient3 font-semibold">
-                  {' '}
-                  full stack developer{' '}
-                </span>
+                  full stack developer
+                </span>{' '}
                 with a love for UX/UI and creative development.
               </p>
               <p className="mb-4 font-normal tracking-mono md:text-normal ">
@@ -43,10 +42,9 @@ const Home = ({ data }: { data: any }) => {
               </p>
 
               <p className="mb-4 font-normal tracking-mono md:text-normal ">
-                In my spare time you can find me
+                In my spare time you can find me{' '}
                 <span className="bg-darkGradient1 font-semibold">
-                  {' '}
-                  creating stuff{' '}
+                  creating stuff
                 </span>
                 , in the broad sense of the word. I dabble with sketching,
                 painting, sculpting, wood crafts, illustrations, animations, 3D
@@ -65,10 +63,11 @@ const Home = ({ data }: { data: any }) => {
             </div>
           </article>
 
+          {/* Work Projects */}
           <article id="projects" className=" mx-8 my-16 md:mx-28 md:my-32 ">
-            <PromoHeader title="My projects" />
-            <section className="grid-rows-auto grid grid-cols-2 gap-2">
-              <h2 className="hidden">Projects</h2>
+            <PromoHeader title="Recent Projects" />
+            <section className="grid-rows-auto grid grid-cols-1 gap-2">
+              <h2 className="hidden">Recent Projects</h2>
               {data.map(
                 (project: any) =>
                   project.projectType === 'career' && (
@@ -87,12 +86,13 @@ const Home = ({ data }: { data: any }) => {
             </section>
           </article>
 
+          {/* Hobby Projects */}
           <article
             id="hobbyProjects"
             className=" mx-8 my-16 md:mx-28 md:my-32 "
           >
             <PromoHeader title="Hobby projects" />
-            <section className="grid-rows-auto grid grid-cols-2 gap-2">
+            <section className="grid-rows-auto grid grid-cols-1 gap-2">
               <h2 className="hidden">Hobby Projects</h2>
               {data.map(
                 (project: any) =>

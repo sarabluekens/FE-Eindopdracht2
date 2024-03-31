@@ -1,9 +1,9 @@
-
 import Image from 'next/image'
 import GradientButton from './GradientButton'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import Link from 'next/link'
-const ProjectPromo = ({
+const ProjectList
+ = ({
   title,
   promoText,
   promoImage,
@@ -21,25 +21,26 @@ const ProjectPromo = ({
   externalLink?: string
 }) => {
   return (
-    <section className="mx-1 my-20 flex flex-1 flex-col items-center justify-around md:mx-5 lg:flex-row">
-      <div className="rounded-lg border-2 border-white pb-2 pl-2">
+    <section className="mx-1 my-2 md:mx-5">
+      <div className=" rounded-lg border border-white pb-2 pl-2">
         <Image
-          className="h-auto -translate-x-4 translate-y-4 rounded-lg md:-translate-x-7 md:translate-y-7 "
+          className=" w-full -translate-x-4 translate-y-4 rounded-lg md:-translate-x-3 md:translate-y-3 "
           src={`/${promoImage}.png`}
-          width={562}
-          height={562}
+          width={500}
+          height={300}
           alt={promoAlt}
         />
       </div>
       <div className="ml-5 lg:ml-10 lg:w-1/3">
-        <h3 className="mt-10 font-londrinaSolid text-thirdtitle font-thin  tracking-londrina md:mb-5 lg:mt-1 lg:text-title">
+        <h3 className="mt-10 hidden font-londrinaSolid text-thirdtitle  font-thin tracking-londrina md:mb-5 lg:mt-1 lg:text-title">
           {title}
         </h3>
-        <p className=" text-mono font-sans w-4/5 text-sm tracking-mono md:text-normal ">
+        <p className=" text-mono font-sans hidden w-4/5 text-sm tracking-mono md:text-normal ">
           {promoText}
         </p>
 
-        <div className="my-5 flex w-2/3  justify-end">
+        {/* Show on hover */}
+        <div className="my-5 hidden  w-2/3 justify-end">
           {codeLink && (
             <Link target="_blank" href={codeLink}>
               <FiGithub className="mx-2" size={24} color="#E4EFEE" />
@@ -51,7 +52,7 @@ const ProjectPromo = ({
             </Link>
           )}
         </div>
-        <div className="w-1/4">
+        <div className="hidden w-1/4">
           <GradientButton link={`/projects/${id}`} text="to Case file" />
         </div>
       </div>
@@ -59,4 +60,5 @@ const ProjectPromo = ({
   )
 }
 
-export default ProjectPromo
+export default ProjectList
+
