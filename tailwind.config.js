@@ -44,6 +44,17 @@ module.exports = {
       londrina: '0.35rem',
       mono: '0.05rem',
     },
+    extend: {
+      keyframes: {
+        gradient: {
+          '0%, 100%': { transform: 'height:1%' },
+          '50%': { transform: 'height:100%' },
+        }
+      },
+      animation: {
+        'gradient': 'gradient 1s',
+      },
+    }
   },
   plugins: [],
 }

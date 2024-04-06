@@ -2,6 +2,7 @@ import Image from 'next/image'
 import GradientButton from './GradientButton'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import Link from 'next/link'
+import { useState } from 'react'
 const ProjectList
  = ({
   title,
@@ -20,9 +21,13 @@ const ProjectList
   codeLink?: string
   externalLink?: string
 }) => {
+  const [isShown, setIsShown] = useState(false);
+  
   return (
     <section className="mx-1 my-2 md:mx-5">
-      <div className=" rounded-lg border border-white pb-2 pl-2">
+      <div onMouseEnter={() => setIsShown(true)} 
+        onMouseLeave={() => setIsShown(false)}
+      className=" rounded-lg border border-white pb-2 pl-2 hover:animate-gradient">
         <Image
           className=" w-full -translate-x-4 translate-y-4 rounded-lg md:-translate-x-3 md:translate-y-3 "
           src={`/${promoImage}.png`}
@@ -40,21 +45,25 @@ const ProjectList
         </p>
 
         {/* Show on hover */}
-        <div className="my-5 hidden  w-2/3 justify-end">
-          {codeLink && (
-            <Link target="_blank" href={codeLink}>
-              <FiGithub className="mx-2" size={24} color="#E4EFEE" />
-            </Link>
-          )}
-          {externalLink && (
-            <Link target="_blank" href={externalLink}>
-              <FiExternalLink className="mx-2" size={24} color="#E4EFEE" />
-            </Link>
-          )}
-        </div>
-        <div className="hidden w-1/4">
-          <GradientButton link={`/projects/${id}`} text="to Case file" />
-        </div>
+        {isShown && (
+        <>
+            <div className="my-5  w-2/3 justify-end animate-gradient">
+            {codeLink && (
+                <Link target="_blank" href={codeLink}>
+                    <FiGithub className="mx-2" size={24} color="#E4EFEE" />
+                </Link>
+            )}
+            {externalLink && (
+                <Link target="_blank" href={externalLink}>
+                    <FiExternalLink className="mx-2" size={24} color="#E4EFEE" />
+                </Link>
+            )}
+            </div>
+            <div className=" w-1/4">
+                <GradientButton link={`/projects/${id}`} text="to Case file" />
+            </div>
+        </>
+        )}
       </div>
     </section>
   )
