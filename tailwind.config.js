@@ -47,12 +47,14 @@ module.exports = {
     extend: {
       keyframes: {
         gradient: {
-          '0%, 100%': { transform: 'height:1%' },
-          '50%': { transform: 'height:100%' },
+          '0%': { backgroundSize: '400% 400%', backgroundPosition: '100% 0%'},
+          '100%': { backgroundSize: '200% 200%', backgroundPosition: '0% 0%'},
+          '50%': { backgroundSize: '300% 300%', backgroundPosition: '100% 0%'}
         }
       },
       animation: {
-        'gradient': 'gradient 1s',
+        'gradient': 'gradient 1s ease infinite',
+
       },
     }
   },
