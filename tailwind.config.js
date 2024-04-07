@@ -47,27 +47,35 @@ module.exports = {
     extend: {
       keyframes: {
         slideOut: {
-          "0%": { transform: "translateY(0) translateX(5)" },
-          "100%": { transform: "translateY(105%)" },
-
+          '0%': { transform: 'translateY(0) translateX(5)' },
+          '100%': { transform: 'translateY(105%)' },
         },
         slideIn: {
-          "0%": { transform: "translateY(105%)" },
-          "100%": { transform: "translateY(0) translateX(5)" },
+          '0%': { transform: 'translateY(105%)' },
+          '100%': { transform: 'translateY(0) translateX(5)' },
         },
         gradient: {
-          '0%': { backgroundSize: '400% 400%', backgroundPosition: '100% 0%'},
-          '100%': { backgroundSize: '200% 200%', backgroundPosition: '0% 0%'},
-          '50%': { backgroundSize: '300% 300%', backgroundPosition: '100% 0%'}
-        }
+          '0%': { backgroundSize: '400% 400%', backgroundPosition: '100% 0%' },
+          '100%': { backgroundSize: '200% 200%', backgroundPosition: '0% 0%' },
+          '50%': { backgroundSize: '300% 300%', backgroundPosition: '100% 0%' },
+        },
+        appear: {
+          '0%': { opacity: 0 },
+          '100%': { opacity: 1 },
+        },
+        dissapear: {
+          '0%': { opacity: 1 },
+          '100%': { opacity: 0 },
+        },
       },
       animation: {
-        'gradient': 'gradient 1s ease infinite',
-        'slideOut': 'slideOut .3s forwards',
-        'slideIn': 'slideIn .3s forwards',
-
+        gradient: 'gradient 1s ease infinite',
+        slideOut: 'slideOut .3s forwards',
+        slideIn: 'slideIn .3s forwards',
+        appear: 'appear 1s forwards',
+        dissapear: 'appear 1s reverse forwards',
       },
-    }
+    },
   },
   plugins: [],
 }

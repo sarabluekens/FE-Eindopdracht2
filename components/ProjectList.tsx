@@ -3,8 +3,8 @@ import GradientButton from './GradientButton'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import Link from 'next/link'
 import { useState } from 'react'
-const ProjectList
- = ({
+import OutlineButton from './OutlineButton'
+const ProjectList = ({
   title,
   promoText,
   promoImage,
@@ -21,45 +21,66 @@ const ProjectList
   codeLink?: string
   externalLink?: string
 }) => {
-    const [isShown, setIsShown] = useState(false)
+  const [isShown, setIsShown] = useState(false)
 
   return (
-    <section className="mx-1 my-2 md:mx-5">
-      <div onMouseEnter={() => setIsShown(true)}
-            onMouseLeave={() => setIsShown(false)}
-      className={`rounded-lg border border-white overflow-hidden ${isShown? 'bg-gradient1' : '' }`} >
+    <section className="m-2 mx-1 md:mx-5 ">
+      <div
+        onMouseEnter={() => setIsShown(true)}
+        onMouseLeave={() => setIsShown(false)}
+        className={`relative overflow-hidden rounded-lg border border-white ${
+          isShown ? 'bg-gradient1' : ''
+        } `}
+      >
         <Image
-          className={`w-full rounded-lg overflow-hidden  ${isShown? 'animate-slideOut' : 'animate-slideIn' }`}
+          className={`w-full overflow-hidden rounded-lg  ${
+            isShown ? 'animate-slideOut' : 'animate-slideIn'
+          }`}
           src={`/${promoImage}.png`}
           width={500}
           height={300}
           alt={promoAlt}
         />
-        
-      </div>
-      <div className="ml-5 lg:ml-10 lg:w-1/3">
-        <h3 className="mt-10 hidden font-londrinaSolid text-thirdtitle  font-thin tracking-londrina md:mb-5 lg:mt-1 lg:text-title">
-          {title}
-        </h3>
-        <p className=" text-mono font-sans hidden w-4/5 text-sm tracking-mono md:text-normal ">
-          {promoText}
-        </p>
 
-        {/* Show on hover */}
-        <div className="my-5 hidden  w-2/3 justify-end">
-          {codeLink && (
-            <Link target="_blank" href={codeLink}>
-              <FiGithub className="mx-2" size={24} color="#E4EFEE" />
-            </Link>
-          )}
-          {externalLink && (
-            <Link target="_blank" href={externalLink}>
-              <FiExternalLink className="mx-2" size={24} color="#E4EFEE" />
-            </Link>
-          )}
-        </div>
-        <div className="hidden w-1/4">
-          <GradientButton link={`/projects/${id}`} text="to Case file" />
+        <div className=" absolute top-0 flex h-full flex-col justify-between">
+          <h3
+            className={` font-londrinaSolid text-thirdtitle  font-thin tracking-londrina md:mb-5 lg:mt-1 lg:text-title ${
+              isShown ? ' animate-appear px-8 py-4' : 'hidden'
+            }`}
+          >
+            {title}
+          </h3>
+          <p
+            className={` font-sans text-mono self text-sm tracking-mono md:text-normal ${
+              isShown ? '  animate-appear px-8' : 'hidden'
+            }`}
+          >
+            {promoText}
+          </p>
+
+          <div className={` ${isShown ? 'mx-10 animate-appear' : 'hidden'}`}>
+            <OutlineButton link={`/projects/${id}`} text="to Case file" />
+          </div>
+
+          <section
+            className={` flex items-center justify-center self-end ${
+              isShown ? 'animate-appear p-4' : 'hidden'
+            }`}
+          >
+            <h4 className="${ font-londrinaSolid  text-subtitle font-thin tracking-londrina              ">
+              Check it out:
+            </h4>
+            {codeLink && (
+              <Link target="_blank" href={codeLink}>
+                <FiGithub className="mx-2" size={24} color="#E4EFEE" />
+              </Link>
+            )}
+            {externalLink && (
+              <Link target="_blank" href={externalLink}>
+                <FiExternalLink className="mx-2" size={24} color="#E4EFEE" />
+              </Link>
+            )}
+          </section>
         </div>
       </div>
     </section>
@@ -67,4 +88,3 @@ const ProjectList
 }
 
 export default ProjectList
-
