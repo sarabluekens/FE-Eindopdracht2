@@ -4,7 +4,7 @@
     "projectType": "career",
     "title": "Jumping Jaws",
     "promoText": "An endless runner game where two players need to jump on a trampoline to survive.",
-    "promoImage": "jumpingJaws",
+    "promoImage": "trampolineGame",
     "promoAlt": "Jumping Jaws op de Facts Expo in Gent",
     "codeLink": "https://github.com/DauweQuinten/Trampoline_Groep2_FrontEnd",
     "question": "This project was created for Sports innovation campus in Bruges. They asked us to create a digital application to encourage the youth to exercise more.  We were given trampolines by the client. ",
