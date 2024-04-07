@@ -46,6 +46,15 @@ module.exports = {
     },
     extend: {
       keyframes: {
+        slideOut: {
+          "0%": { transform: "translateY(0) translateX(5)" },
+          "100%": { transform: "translateY(105%)" },
+
+        },
+        slideIn: {
+          "0%": { transform: "translateY(105%)" },
+          "100%": { transform: "translateY(0) translateX(5)" },
+        },
         gradient: {
           '0%': { backgroundSize: '400% 400%', backgroundPosition: '100% 0%'},
           '100%': { backgroundSize: '200% 200%', backgroundPosition: '0% 0%'},
@@ -54,6 +63,8 @@ module.exports = {
       },
       animation: {
         'gradient': 'gradient 1s ease infinite',
+        'slideOut': 'slideOut .3s forwards',
+        'slideIn': 'slideIn .3s forwards',
 
       },
     }
