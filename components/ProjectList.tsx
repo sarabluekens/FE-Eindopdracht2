@@ -29,7 +29,7 @@ const ProjectList = ({
         onMouseEnter={() => setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}
         className={`relative overflow-hidden rounded-lg border border-white ${
-          isShown ? 'bg-gradient1' : ''
+          isShown ? 'background-animate bg-gradient1' : ''
         } `}
       >
         <Image
@@ -58,7 +58,7 @@ const ProjectList = ({
             {promoText}
           </p>
 
-          <div className={` ${isShown ? 'mx-10 animate-appear' : 'hidden'}`}>
+          <div className={` ${isShown ? 'mx-12 animate-appear' : 'hidden'}`}>
             <OutlineButton link={`/projects/${id}`} text="to Case file" />
           </div>
 

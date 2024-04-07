@@ -30,7 +30,7 @@ const Footer = () => {
           </a>
         </div>
         <p className="font-londrinaSolid text-normal font-thin tracking-londrina lg:text-nav">
-          <span className="font-mono"> &#169; </span>2023
+          <span className="font-mono"> &#169; </span>2024
         </p>
       </footer>
     </div>

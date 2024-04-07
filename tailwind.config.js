@@ -55,7 +55,7 @@ module.exports = {
           '100%': { transform: 'translateY(0) translateX(5)' },
         },
         gradient: {
-          '0%': { backgroundSize: '400% 400%', backgroundPosition: '100% 0%' },
+          '0%': { backgroundSize: '400% 400%', backgroundPosition: '400% 0%' },
           '100%': { backgroundSize: '200% 200%', backgroundPosition: '0% 0%' },
           '50%': { backgroundSize: '300% 300%', backgroundPosition: '100% 0%' },
         },
@@ -69,7 +69,7 @@ module.exports = {
         },
       },
       animation: {
-        gradient: 'gradient 1s ease infinite',
+        gradient: 'gradient .3 ease infinite',
         slideOut: 'slideOut .3s forwards',
         slideIn: 'slideIn .3s forwards',
         appear: 'appear 1s forwards',

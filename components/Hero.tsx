@@ -4,7 +4,7 @@ import Link from 'next/link'
 const Hero = () => {
   return (
     <div
-      className="background-animate 
+      className=" background-animate 
         flex
         h-screen
         w-screen
