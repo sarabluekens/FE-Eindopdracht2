@@ -33,12 +33,12 @@ module.exports = {
     fontSize: {
       nav: '1.6rem',
       title: '3rem',
-      smalltitle: '2.7rem',
-      thirdtitle: '2.4rem',
+      smalltitle: '2rem',
+      thirdtitle: '1.7rem',
       sm: '1rem',
-      subtitle: '1.5rem',
+      subtitle: '1.3rem',
       normal: '1.2rem',
-      footer: '2.0 rem',
+      footer: '1.0 rem',
     },
     letterSpacing: {
       londrina: '0.35rem',
@@ -67,6 +67,11 @@ module.exports = {
           '0%': { opacity: 1 },
           '100%': { opacity: 0 },
         },
+        arrow: {
+          '0%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(5px)' },
+          '100%': { transform: 'translateY(0)' },
+        },
       },
       animation: {
         gradient: 'gradient .3 ease infinite',
@@ -74,6 +79,7 @@ module.exports = {
         slideIn: 'slideIn .3s forwards',
         appear: 'appear 1s forwards',
         dissapear: 'appear 1s reverse forwards',
+        arrow: 'arrow 1s infinite',
       },
     },
   },

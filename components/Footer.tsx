@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <div className="mt-auto">
       <Divider />
-      <footer className=" my-10 grid grid-flow-row grid-cols-3 grid-rows-1 content-center justify-items-center sm:grid-cols-2 sm:grid-rows-2 md:grid-cols-3 md:grid-rows-1">
+      <footer className="grid grid-flow-row grid-rows-1 content-center justify-items-center sm:grid-cols-2 sm:grid-rows-2 md:my-10 md:grid-cols-3 md:grid-rows-1">
         <Link
           href="mailto:sara.bluekens@skynet.be"
-          className="font-londrinaSolid text-normal font-thin tracking-londrina lg:text-nav"
+          className="font-londrinaSolid text-footer font-thin tracking-londrina lg:text-nav"
         >
           Sara.bluekens@skynet.be
         </Link>
@@ -29,8 +29,8 @@ const Footer = () => {
             <BsFileEarmarkPdf size={24} />
           </a>
         </div>
-        <p className="font-londrinaSolid text-normal font-thin tracking-londrina lg:text-nav">
-          <span className="font-mono"> &#169; </span>2024
+        <p className="font-londrinaSolid text-footer font-thin tracking-londrina lg:text-nav">
+          <span className="font-mono text-subtitle"> &#169; </span>2024
         </p>
       </footer>
     </div>

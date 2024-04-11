@@ -4,8 +4,24 @@ import PromoHeader from '../components/PromoHeader'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
+import OutlineButton from '../components/OutlineButton'
 
 const Home = ({ data }: { data: any }) => {
+  const [profilepicture, setProfilepicture] = useState('/profileLarge.png')
+
+  useEffect(() => {
+    if (window.innerWidth < 640) {
+      //phone
+      setProfilepicture('/profileSmall.png')
+    } else if (window.innerWidth >= 640 && window.innerWidth < 1280) {
+      //tablet
+      setProfilepicture('/profileLarge.png')
+    } else {
+      //desktop
+      setProfilepicture('/profileMedium.png')
+    }
+  }, [])
+
   return (
     <>
       <Navbar />
@@ -13,8 +29,8 @@ const Home = ({ data }: { data: any }) => {
         <Hero />
 
         <main>
-          <article className="mx-12 my-24 flex flex-col-reverse content-center justify-around md:mx-28 md:my-32 lg:flex-row">
-            <div className="w-11/12 lg:w-5/12">
+          <article className="mx-12 my-4 flex flex-col-reverse content-center justify-around md:mx-28 md:my-4 lg:flex-row">
+            <div className="ml-4 md:ml-0 md:w-11/12 lg:w-5/12">
               <h2 className="font-londrinaSolid  text-smalltitle font-thin tracking-londrina md:text-title">
                 About me
               </h2>
@@ -53,8 +69,8 @@ const Home = ({ data }: { data: any }) => {
             </div>
             <div>
               <Image
-                className="m-5 opacity-80"
-                src="/profile.png"
+                className="m-auto my-4 w-4/5 opacity-80 md:w-11/12 lg:w-5/12"
+                src={profilepicture}
                 alt="profilepicture"
                 width={600}
                 height={148}
@@ -63,14 +79,14 @@ const Home = ({ data }: { data: any }) => {
             </div>
           </article>
 
-          {/* Work Projects */}
-          <article id="projects" className=" mx-8 my-16 md:mx-28 md:my-32 ">
-            <PromoHeader title="Recent Projects" />
+          {/* star Projects */}
+          <article id="projects" className=" mx-8 md:mx-28 md:my-8 ">
+            <PromoHeader title="Star Project(s)" />
             <section className="grid-rows-auto grid grid-cols-1 gap-2">
-              <h2 className="hidden">Recent Projects</h2>
+              <h2 className="hidden">Star Project(s)</h2>
               {data.map(
                 (project: any) =>
-                  project.projectType === 'career' && (
+                  project.projectType === 'star' && (
                     <ProjectPromo
                       key={project.id}
                       id={project.id}
@@ -85,32 +101,9 @@ const Home = ({ data }: { data: any }) => {
               )}
             </section>
           </article>
-
-          {/* Hobby Projects */}
-          <article
-            id="hobbyProjects"
-            className=" mx-8 my-16 md:mx-28 md:my-32 "
-          >
-            <PromoHeader title="Hobby projects" />
-            <section className="grid-rows-auto grid grid-cols-1 gap-2">
-              <h2 className="hidden">Hobby Projects</h2>
-              {data.map(
-                (project: any) =>
-                  project.projectType === 'hobby' && (
-                    <ProjectPromo
-                      key={project.id}
-                      id={project.id}
-                      title={project.title}
-                      promoImage={project.promoImage}
-                      promoText={project.promoText}
-                      promoAlt={project.promoAlt}
-                      codeLink={project.codeLink}
-                      externalLink={project.externalLink}
-                    />
-                  ),
-              )}
-            </section>
-          </article>
+          <div className="my-8 w-full ">
+            <ThirdButton link="/projects" text="View all projects" />
+          </div>
         </main>
       </div>
       <Footer />
@@ -121,6 +114,8 @@ const Home = ({ data }: { data: any }) => {
 export default Home
 
 import { getLocalData } from '../lib/localdata'
+import { useEffect, useState } from 'react'
+import ThirdButton from '<pages>/components/thirdButton'
 
 export const getStaticProps = async () => {
   const data = await getLocalData()

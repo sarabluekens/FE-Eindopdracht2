@@ -11,7 +11,7 @@ const Navbar = () => {
         <div className="flex flex-row items-center justify-between pt-3 md:block md:pt-5 ">
           <Link href="/" className="m-3 pl-3 md:inline md:pl-1">
             <Image
-              className="height-auto"
+              className="height-auto w-2/3 md:w-4/5 lg:w-full"
               src="/logo1.svg"
               alt="Logo Sara Bluekens brand"
               width={68}

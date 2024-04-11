@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "projectType": "career",
+    "projectType": "star",
     "title": "Jumping Jaws",
     "promoText": "An endless runner game where two players need to jump on a trampoline to survive.",
     "promoImage": "trampolineGame",

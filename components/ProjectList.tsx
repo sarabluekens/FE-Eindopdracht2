@@ -59,7 +59,11 @@ const ProjectList = ({
           </p>
 
           <div className={` ${isShown ? 'mx-12 animate-appear' : 'hidden'}`}>
-            <OutlineButton link={`/projects/${id}`} text="to Case file" />
+            <OutlineButton
+              link={`/projects/${id}`}
+              text="to Case file"
+              color="blue"
+            />
           </div>
 
           <section
