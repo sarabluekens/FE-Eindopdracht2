@@ -8,15 +8,17 @@ const ThirdButton = ({ link, text }: { link: string; text: string }) => {
     <Link
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
-      className={`m-auto flex h-auto w-1/2 active:translate-x-2 active:translate-y-2 active:p-0 `}
+      className={`m-auto flex rounded active:translate-x-1 active:translate-y-1 md:w-1/2 lg:w-2/3 lg:justify-end `}
       href={link}
     >
       <div
-        className={` text-grey flex h-full w-full -translate-x-2 translate-y-2 items-center justify-center font-londrinaSolid text-smalltitle
+        className={` flex items-center  justify-center font-londrinaSolid text-smallTitle font-thin
 
-        font-thin tracking-londrina ${
-          hover ? 'underline decoration-1 underline-offset-8' : ''
-        } `}
+        tracking-londrina text-grey ${
+          hover
+            ? 'underline decoration-2 underline-offset-8'
+            : 'active:underline active:decoration-1 active:underline-offset-8'
+        }  `}
       >
         <p className="p-4">{text}</p>
         <BsArrowRight className={`${hover ? 'animate-arrow' : ''} `} />

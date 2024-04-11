@@ -29,9 +29,9 @@ const Home = ({ data }: { data: any }) => {
         <Hero />
 
         <main>
-          <article className="mx-12 my-4 flex flex-col-reverse content-center justify-around md:mx-28 md:my-4 lg:flex-row">
-            <div className="ml-4 md:ml-0 md:w-11/12 lg:w-5/12">
-              <h2 className="font-londrinaSolid  text-smalltitle font-thin tracking-londrina md:text-title">
+          <article className="mx-12 my-4 lg:mx-4 flex flex-col-reverse items-center justify-around lg:justify-center md:mx-28 md:my-4 lg:my-16 lg:flex-row">
+            <div className="ml-4 md:w-11/12 lg:w-5/12">
+              <h2 className="text-smallTitle font-londrinaSolid font-thin tracking-londrina md:text-title">
                 About me
               </h2>
               <p className=" -mt-2 mb-8 font-londrinaSolid text-subtitle font-thin tracking-londrina text-grey">
@@ -67,9 +67,9 @@ const Home = ({ data }: { data: any }) => {
                 modelling, games, installations... As long as i can be creative.
               </p>
             </div>
-            <div>
+            <div className='lg:w-5/12 lg:ml-6 xl:w-4/12'>
               <Image
-                className="m-auto my-4 w-4/5 opacity-80 md:w-11/12 lg:w-5/12"
+                className="m-auto my-4 w-4/5 opacity-80 md:w-9/12 lg:h-full lg:w-full"
                 src={profilepicture}
                 alt="profilepicture"
                 width={600}
@@ -80,10 +80,10 @@ const Home = ({ data }: { data: any }) => {
           </article>
 
           {/* star Projects */}
-          <article id="projects" className=" mx-8 md:mx-28 md:my-8 ">
-            <PromoHeader title="Star Project(s)" />
+          <article id="projects" className=" mx-8 md:mx-28 md:my-4 ">
+            <PromoHeader title="Star Project" />
             <section className="grid-rows-auto grid grid-cols-1 gap-2">
-              <h2 className="hidden">Star Project(s)</h2>
+              <h2 className="hidden">Star Project</h2>
               {data.map(
                 (project: any) =>
                   project.projectType === 'star' && (
@@ -101,7 +101,7 @@ const Home = ({ data }: { data: any }) => {
               )}
             </section>
           </article>
-          <div className="my-8 w-full ">
+          <div className="my-8 md:my-4 w-full lg:my-8 ">
             <ThirdButton link="/projects" text="View all projects" />
           </div>
         </main>

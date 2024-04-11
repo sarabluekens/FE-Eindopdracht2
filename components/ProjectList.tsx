@@ -44,7 +44,7 @@ const ProjectList = ({
 
         <div className=" absolute top-0 flex h-full flex-col justify-between">
           <h3
-            className={` font-londrinaSolid text-thirdtitle  font-thin tracking-londrina md:mb-5 lg:mt-1 lg:text-title ${
+            className={` font-londrinaSolid text-thirdTitle  font-thin tracking-londrina md:mb-5 lg:mt-1 lg:text-title ${
               isShown ? ' animate-appear px-8 py-4' : 'hidden'
             }`}
           >

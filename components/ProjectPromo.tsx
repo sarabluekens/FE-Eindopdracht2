@@ -30,8 +30,8 @@ const ProjectPromo = ({
           alt={promoAlt}
         />
       </div>
-      <div className="ml-5 lg:ml-10 lg:w-1/3">
-        <h3 className="mt-10 font-londrinaSolid text-thirdtitle font-thin  tracking-londrina md:mb-5 lg:mt-1 lg:text-title">
+      <div className="ml-5 md:ml-0 lg:ml-10 lg:w-1/3">
+        <h3 className="mt-10 font-londrinaSolid text-thirdTitle md:text-smallTitle font-thin  tracking-londrina md:mb-5 lg:mt-1 lg:text-title">
           {title}
         </h3>
         <p className="text-mono font-sans text-sm tracking-mono md:text-normal ">

@@ -33,8 +33,8 @@ module.exports = {
     fontSize: {
       nav: '1.6rem',
       title: '3rem',
-      smalltitle: '2rem',
-      thirdtitle: '1.7rem',
+      smallTitle: '2rem',
+      thirdTitle: '1.7rem',
       sm: '1rem',
       subtitle: '1.3rem',
       normal: '1.2rem',

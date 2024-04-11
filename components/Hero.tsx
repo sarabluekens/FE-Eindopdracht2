@@ -12,7 +12,7 @@ const Hero = () => {
     items-center justify-center bg-gradient-to-r font-londrinaSolid"
     >
       <div className="-mt-20 flex flex-col">
-        <h1 className="text-center text-smalltitle font-thin tracking-londrina md:text-title">
+        <h1 className="text-center text-smallTitle font-thin tracking-londrina md:text-title">
           Digital developer
         </h1>
         <Link
