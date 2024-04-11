@@ -7,9 +7,9 @@ const Projects = ({ data }: { data: any }) => {
   return (
     <>
       <Navbar />
-      <article id="projects" className="px-20 py-24">
+      <article id="projects" className=" px-4 md:px-20 pt-24 md:py-24">
         <PromoHeader title="My projects" />
-        <section className="grid-rows-auto m-16 grid grid-cols-2 gap-2">
+        <section className="grid-rows-auto m-4 md:m-16 grid md:grid-cols-2 gap-2">
           <h2 className="hidden">Projects</h2>
           {data.map(
             (project: any) =>
@@ -36,7 +36,7 @@ const Projects = ({ data }: { data: any }) => {
           {data.map(
             (project: any) =>
               project.projectType === 'hobby' && (
-                <ProjectPromo
+                <ProjectList
                   key={project.id}
                   id={project.id}
                   title={project.title}

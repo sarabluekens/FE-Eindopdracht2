@@ -44,21 +44,21 @@ const ProjectList = ({
 
         <div className=" absolute top-0 flex h-full flex-col justify-between">
           <h3
-            className={` font-londrinaSolid text-thirdTitle  font-thin tracking-londrina md:mb-5 lg:mt-1 lg:text-title ${
-              isShown ? ' animate-appear px-8 py-4' : 'hidden'
+            className={` font-londrinaSolid text-subtitle font-thin  tracking-londrina md:mb-5 md:text-thirdTitle lg:mt-1 lg:text-title ${
+              isShown ? ' mx-4 animate-appear pt-2 md:px-8 md:py-4' : 'hidden'
             }`}
           >
             {title}
           </h3>
           <p
             className={` font-sans text-mono self text-sm tracking-mono md:text-normal ${
-              isShown ? '  animate-appear px-8' : 'hidden'
+              isShown ? '  animate-appear mx-4 md:px-8' : 'hidden'
             }`}
           >
             {promoText}
           </p>
 
-          <div className={` ${isShown ? 'mx-12 animate-appear' : 'hidden'}`}>
+          <div className={` ${isShown ? 'animate-appear md:mx-12' : 'hidden'}`}>
             <OutlineButton
               link={`/projects/${id}`}
               text="to Case file"
