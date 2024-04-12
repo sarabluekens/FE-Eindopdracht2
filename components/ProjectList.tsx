@@ -24,7 +24,7 @@ const ProjectList = ({
   const [isShown, setIsShown] = useState(false)
 
   return (
-    <section className="m-2 mx-1 md:mx-5 ">
+    <section className="m-2 mx-1">
       <div
         onMouseEnter={() => setIsShown(true)}
         onMouseLeave={() => setIsShown(false)}
@@ -42,21 +42,22 @@ const ProjectList = ({
           alt={promoAlt}
         />
 
-        <div className=" absolute top-0 flex h-full flex-col justify-between">
+        <div className=" absolute top-0 flex h-full flex-col justify-around md:justify-between">
           <h3
-            className={` font-londrinaSolid text-subtitle font-thin  tracking-londrina md:mb-5 md:text-thirdTitle lg:mt-1 lg:text-title ${
-              isShown ? ' mx-4 animate-appear pt-2 md:px-8 md:py-4' : 'hidden'
+            className={` font-londrinaSolid text-subtitle font-thin tracking-londrina md:text-thirdTitle lg:mt-1 lg:text-title ${
+              isShown ? ' mx-4 animate-appear pt-2 md:mx-8' : 'hidden'
             }`}
           >
-            {title}
+            {/* div is needed for clamp class */}
+            <div className="line-clamp-1">{title}</div>
           </h3>
-          <p
+          <div
             className={` font-sans text-mono self text-sm tracking-mono md:text-normal ${
-              isShown ? '  animate-appear mx-4 md:px-8' : 'hidden'
+              isShown ? 'mx-4 line-clamp-2 animate-appear md:px-1 md:text-sm' : 'hidden'
             }`}
           >
-            {promoText}
-          </p>
+            <p className="line-clamp-2">{promoText}</p>
+          </div>
 
           <div className={` ${isShown ? 'animate-appear md:mx-12' : 'hidden'}`}>
             <OutlineButton
@@ -65,13 +66,13 @@ const ProjectList = ({
               color="blue"
             />
           </div>
-
+          {/* external links (hidden on mobile -> visible in case file) */}
           <section
-            className={` flex items-center justify-center self-end ${
-              isShown ? 'animate-appear p-4' : 'hidden'
+            className={` hidden items-center justify-center self-end  ${
+              isShown ? ' animate-appear p-4 md:flex' : 'hidden'
             }`}
           >
-            <h4 className="${ font-londrinaSolid  text-subtitle font-thin tracking-londrina              ">
+            <h4 className="font-londrinaSolid  text-subtitle font-thin tracking-londrina md:text-sm">
               Check it out:
             </h4>
             {codeLink && (
