@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
+import Carousel from '<pages>/components/Carousel'
 
 const project = ({ projectInfo }: { projectInfo: any }) => {
   return (
@@ -14,6 +15,7 @@ const project = ({ projectInfo }: { projectInfo: any }) => {
         <h1 className="my-5 pt-1 text-center font-londrinaSolid text-thirdTitle font-thin tracking-londrina md:pt-16 md:text-title">
           {projectInfo.title}
         </h1>
+        <Carousel />
         <Image
           src={`/${projectInfo.promoImage}.png`}
           alt={projectInfo.promoAlt}
