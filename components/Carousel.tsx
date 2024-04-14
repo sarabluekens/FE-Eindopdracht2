@@ -3,29 +3,6 @@ import { slide } from 'react-burger-menu'
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 
 const Carousel = ({ images }: { images: Array<string> }) => {
-  const dummyImages = [
-    {
-      url: '/trampolineGame.png',
-    },
-    {
-      url: 'https://vimeo.com/934548745?share=copy',
-    },
-    {
-      url: '/personal.png',
-    },
-    {
-      url: '/sneakySam.png',
-    },
-    {
-      url: '/schrijfHetUit.png',
-    },
-    {
-      url: '/smileSafari.png',
-    },
-    {
-      url: '/print.png',
-    },
-  ]
   const [currentIndex, setCurrentIndex] = useState(0)
 
   const prevItem = () => {
