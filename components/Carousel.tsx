@@ -2,13 +2,13 @@ import { useState } from 'react'
 import { slide } from 'react-burger-menu'
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 
-const Carousel = () => {
-  const images = [
+const Carousel = ({ images }: { images: Array<string> }) => {
+  const dummyImages = [
     {
       url: '/trampolineGame.png',
     },
     {
-      url: '/demo.mp4',
+      url: 'https://vimeo.com/934548745?share=copy',
     },
     {
       url: '/personal.png',
@@ -42,7 +42,7 @@ const Carousel = () => {
   return (
     <section className="group absolute h-[50vh] w-full object-fill px-8 py-4">
       <div
-        style={{ backgroundImage: `url(${images[currentIndex].url})` }}
+        style={{ backgroundImage: `url(${images[currentIndex]})` }}
         className="h-full w-full rounded-2xl bg-cover bg-center duration-500"
       >
         {/* left arrow */}
@@ -67,8 +67,6 @@ const Carousel = () => {
           ))}
         </div>
       </div>
-
-      {/* <video src={`${images[1].url}`}></video> */}
     </section>
   )
 }

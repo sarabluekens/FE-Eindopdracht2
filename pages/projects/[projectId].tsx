@@ -5,7 +5,7 @@ import Link from 'next/link'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import Navbar from '../../components/Navbar'
 import Footer from '../../components/Footer'
-import Carousel from '<pages>/components/Carousel'
+import Carousel from '../../components/Carousel'
 
 const project = ({ projectInfo }: { projectInfo: any }) => {
   return (
@@ -15,15 +15,32 @@ const project = ({ projectInfo }: { projectInfo: any }) => {
         <h1 className="my-5 pt-1 text-center font-londrinaSolid text-thirdTitle font-thin tracking-londrina md:pt-16 md:text-title">
           {projectInfo.title}
         </h1>
-        <Carousel />
-        <Image
-          src={`/${projectInfo.promoImage}.png`}
-          alt={projectInfo.promoAlt}
-          width={1000}
-          height={1000}
-          quality={100}
-          className="mb-10"
-        />
+
+        {projectInfo.video && (
+          <iframe
+            className="h-[60vh] w-1/2"
+            src="https://www.youtube.com/embed/wLq4bcJCM6U?si=aa5sggWOrKfnsjzK"
+            title="Researchproject AI/AR"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+            allowFullScreen
+          ></iframe>
+        )}
+        {
+          projectInfo.image.length > 0 && (
+            <Carousel images={projectInfo.image} />
+          )
+          //
+        }
+        {projectInfo.image.length === 1 && (
+          <Image
+            src={`/${projectInfo.promoImage}.png`}
+            alt={projectInfo.promoAlt}
+            width={1000}
+            height={1000}
+            quality={100}
+            className="mb-10"
+          />
+        )}
 
         <div className="flex w-7/12 flex-wrap justify-center md:justify-start">
           {projectInfo.tags.map((tag: string) => (

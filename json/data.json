@@ -5,6 +5,8 @@
     "title": "Jumping Jaws",
     "promoText": "An endless runner game where two players need to jump on a trampoline to survive.",
     "promoImage": "trampolineGame",
+    "image": ["trampolineGame"],
+    "video": "https://www.youtube.com/embed/1J9Q6J9Q6J9Q",
     "promoAlt": "Jumping Jaws op de Facts Expo in Gent",
     "codeLink": "https://github.com/DauweQuinten/Trampoline_Groep2_FrontEnd",
     "question": "This project was created for Sports innovation campus in Bruges. They asked us to create a digital application to encourage the youth to exercise more.  We were given trampolines by the client. ",
@@ -12,6 +14,7 @@
     "role": "I worked on this project with three other classmates. My role in this project was Ux/Ui Research, Design and  the frontend development of the game (in association with a frontend partner). The others worked on research, Ui implementation, communication with backend and the backend itself. ",
     "gamePlay": "The game is a endless runner game where two players have to work together to steer a boat through a river full of obstacles. Every time the boat hits an obstacle it gets slowed down for a second. There is also a shark chasing them and as soon as he catches up with the boat the game ends. The goal of the game is to stay ahead of the shark for as long as possible.",
     "aftermath": "In our demo and expo, where we set up the game for the public, we noticed that the setup often was a bit difficult to understand. Especially the calibration of the Players proved a very difficult part of the game. Once the people started playing the game itself, we found that they really liked it. They often played more then once to improve their high score. Even though the game was designed for the youth we found that adults liked it a lot as-well, which was really satisfying for us to see. ",
+
     "tags": [
       "Unity",
       "C#",
@@ -29,6 +32,9 @@
     "title": "To the grave",
     "promoText": "A horrifying quiz that determines how you will meet your end.",
     "promoImage": "toTheGrave",
+    "image": ["toTheGrave"],
+    "video": "https://www.youtube.com/embed/1J9Q6J9Q6J9Q",
+
     "promoAlt": "An online calculator of Death.",
     "codeLink": "https://github.com/sarabluekens/calculator",
     "externalLink": "https://bucolic-bombolone-d6b837.netlify.app/",
@@ -46,6 +52,7 @@
     "title": "Led Lightroom",
     "promoText": "An interactive lightroom where people change the lights by moving their body in the room.",
     "promoImage": "smileSafari",
+    "image": ["smileSafari"],
     "promoAlt": "3D of the lightroom with the light effects.",
     "codeLink": "https://github.com/sarabluekens/Bap-SmileSafari",
     "externalLink": "https://www.behance.net/gallery/150697827/Sunset-Room-An-immersive-lightroom-for-Smile-Safari?tracking_source=search_projects%7Csmile+safari",
@@ -70,6 +77,8 @@
     "title": "A Write for sore eyes",
     "promoText": "A web application that allows you to write out what you’re feeling. The website adjusts according to your mood.",
     "promoImage": "schrijfHetUit",
+    "image": ["schrijfHetUit"],
+
     "promoAlt": "Homescreen of the website.",
     "codeLink": "https://github.com/sarabluekens/personal",
     "externalLink": "https://sleepy-jones-731a03.netlify.app/",
@@ -87,6 +96,8 @@
     "title": "Sneaky Sam",
     "promoText": "An endless runner game that is controlled with the movement of the player's head.",
     "promoImage": "sneakySam",
+    "image": ["sneakySam"],
+
     "promoAlt": "Startscreen of the game in Unity.",
     "codeLink": "https://github.com/sarabluekens/PassionProjectHerex",
     "externalLink": "https://www.sarabluekens.be/passion/sam2/",
@@ -101,6 +112,8 @@
     "title": "3D Print",
     "promoText": "A keychain I 3D modelled and printed myself.",
     "promoImage": "print",
+    "image": ["print"],
+
     "promoAlt": "Startscreen of the game in Unity.",
     "experiment": "I was able to experiment with a 3D printer.  Decided to make a keychain.  But instead of just printing a rectangle I wanted to do something special",
     "result": "I created (3D modelled) a cat. This was made using the 3D printers software.  It has been a while because of which I don’t really remember the name of the software. I used an Image as reference and then sculpted a flat 3D model of a cat. ",
