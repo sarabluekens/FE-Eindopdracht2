@@ -119,5 +119,19 @@
     "result": "I created (3D modelled) a cat. This was made using the 3D printers software.  It has been a while because of which I don’t really remember the name of the software. I used an Image as reference and then sculpted a flat 3D model of a cat. ",
     "aftermath": "The 3D modelling is a lot of work and very time consuming, but the 3D print totally makes it worth its time. While I had a fair share of frustrations during the modelling, I enjoyed the overall process. The satisfying result of having your 3D model makes it all so much more fun. In the end my keychain was not really a keychain anymore, but that’s oke. I learned a lot, which was the goal after all.",
     "tags": ["3D print"]
+  },
+  {
+    "id": 7,
+    "projectType": "career",
+    "title": "Endless runner game in AI/AR",
+    "promoText": "An endless runner game in combination with AI and AR to give the player a more immersive experience.",
+    "promoImage": "research",
+    "image": ["research"],
+    "video": "https://www.youtube.com/embed/1J9Q6J9Q6J9Q",
+    "promoAlt": "Startscreen of the game in Flutter.",
+    "experiment": "I researched the possibilities of combining AI and AR with an endless runner game. I wanted to see if it was possible to create a more immersive experience for the player.",
+    "result": "I created a game in Flutter with the Flame engine. There are two ways to play the game. In the first way the player chooses/creates their own obstacles with the Dall-E image generator. The second way really immerses the player in the game with AR. By using the AR_Flutter_plugin the game transforms in a first person view. To get the objects to hit the player I had to work around the anchor point of an AR environment. I repositioned the obstacle over time closer to the players cöordinates, making it move. By physically moving the phone the player can dodge the obstacles. ",
+    "aftermath": "Very proud of the results. I had a hard time finding a workaround for the AR anchor points to get the obstacles to move. Once I found the workaround the results became very satisfying. The AI part of the project learned me that AI is not gonna take over the world anytime soon (Phew). More specifically when asking for a specific amount, it rarely provides the right amount. For example when I asked for 5 frames in a spritesheet, it sometimes generated 2 or 12 or even 120! I was able to solve this by letting the player double checking the amount before creating the game. I learned so much from this project in terms of being stuck and finding creative solutions. ",
+    "tags": ["research", "AI", "AR", "Flutter", "Flame", "Dall-E"]
   }
 ]
