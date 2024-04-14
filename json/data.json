@@ -6,7 +6,7 @@
     "promoText": "An endless runner game where two players need to jump on a trampoline to survive.",
     "promoImage": "trampolineGame",
     "image": ["trampolineGame"],
-    "video": "https://www.youtube.com/embed/1J9Q6J9Q6J9Q",
+    "video": "https://www.youtube.com/embed/0VSpQeysMvU?si=Fzd_NK5q3raHbNHy",
     "promoAlt": "Jumping Jaws op de Facts Expo in Gent",
     "codeLink": "https://github.com/DauweQuinten/Trampoline_Groep2_FrontEnd",
     "question": "This project was created for Sports innovation campus in Bruges. They asked us to create a digital application to encourage the youth to exercise more.  We were given trampolines by the client. ",
@@ -33,7 +33,6 @@
     "promoText": "A horrifying quiz that determines how you will meet your end.",
     "promoImage": "toTheGrave",
     "image": ["toTheGrave"],
-    "video": "https://www.youtube.com/embed/1J9Q6J9Q6J9Q",
 
     "promoAlt": "An online calculator of Death.",
     "codeLink": "https://github.com/sarabluekens/calculator",
@@ -127,12 +126,14 @@
     "promoText": "An endless runner game in combination with AI and AR to give the player a more immersive experience.",
     "promoImage": "research",
     "image": ["research"],
-    "video": "https://www.youtube.com/embed/1J9Q6J9Q6J9Q",
+    "video": "https://www.youtube.com/embed/wLq4bcJCM6U?si=pRNO-2Wf-k3fosMD",
     "promoAlt": "Startscreen of the game in Flutter.",
-    "experiment": "I researched the possibilities of combining AI and AR with an endless runner game. I wanted to see if it was possible to create a more immersive experience for the player.",
-    "result": "I created a game in Flutter with the Flame engine. There are two ways to play the game. In the first way the player chooses/creates their own obstacles with the Dall-E image generator. The second way really immerses the player in the game with AR. By using the AR_Flutter_plugin the game transforms in a first person view. To get the objects to hit the player I had to work around the anchor point of an AR environment. I repositioned the obstacle over time closer to the players cöordinates, making it move. By physically moving the phone the player can dodge the obstacles. ",
+    "solution": "I created a game in Flutter with the Flame engine. There are two ways to play the game. In the first way the player chooses/creates their own obstacles with the Dall-E image generator. The second way really immerses the player in the game with AR. By using the AR_Flutter_plugin the game transforms in a first person view. To get the objects to hit the player I had to work around the anchor point of an AR environment. I repositioned the obstacle over time closer to the players cöordinates, making it move. By physically moving the phone the player can dodge the obstacles. ",
     "aftermath": "Very proud of the results. I had a hard time finding a workaround for the AR anchor points to get the obstacles to move. Once I found the workaround the results became very satisfying. The AI part of the project learned me that AI is not gonna take over the world anytime soon (Phew). More specifically when asking for a specific amount, it rarely provides the right amount. For example when I asked for 5 frames in a spritesheet, it sometimes generated 2 or 12 or even 120! I was able to solve this by letting the player double checking the amount before creating the game. I learned so much from this project in terms of being stuck and finding creative solutions. ",
     "tags": ["research", "AI", "AR", "Flutter", "Flame", "Dall-E"],
-    "codeLink": "https://github.com/sarabluekens/researchProject"
+    "codeLink": "https://github.com/sarabluekens/researchProject",
+    "question": "In a 3weeks span I researched the possibilities of combining AI and AR with an endless runner game. I wanted to see if it was possible to create a more immersive experience for the player.",
+    "role": "I did this project on my own so I was responible for Concept, research, design and development. ",
+    "roleTags": ["Frontend", "Research", "UX/UI", "Design"]
   }
 ]

@@ -15,16 +15,6 @@ const project = ({ projectInfo }: { projectInfo: any }) => {
         <h1 className="my-5 pt-1 text-center font-londrinaSolid text-thirdTitle font-thin tracking-londrina md:pt-16 md:text-title">
           {projectInfo.title}
         </h1>
-
-        {projectInfo.video && (
-          <iframe
-            className="h-[60vh] w-1/2"
-            src="https://www.youtube.com/embed/wLq4bcJCM6U?si=aa5sggWOrKfnsjzK"
-            title="Researchproject AI/AR"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
-            allowFullScreen
-          ></iframe>
-        )}
         {
           projectInfo.image.length > 0 && (
             <Carousel images={projectInfo.image} />
@@ -72,6 +62,15 @@ const project = ({ projectInfo }: { projectInfo: any }) => {
           {projectInfo.solution && (
             <CaseBlock title="Solution" text={projectInfo.solution} />
           )}
+          {projectInfo.video && projectInfo.solution && (
+            <iframe
+              className="m-auto my-4 h-[60vh] w-full"
+              src={projectInfo.video}
+              title="Researchproject AI/AR"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+              allowFullScreen
+            ></iframe>
+          )}
           {projectInfo.role && (
             <CaseBlock title="Role" text={projectInfo.role} />
           )}
@@ -81,9 +80,17 @@ const project = ({ projectInfo }: { projectInfo: any }) => {
           {projectInfo.experiment && (
             <CaseBlock title="Experiment" text={projectInfo.experiment} />
           )}
-
           {projectInfo.result && (
             <CaseBlock title="Result" text={projectInfo.result} />
+          )}
+          {projectInfo.video && projectInfo.result && (
+            <iframe
+              className="m-auto my-4 h-[60vh] w-full"
+              src={projectInfo.video}
+              title="Researchproject AI/AR"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+              allowFullScreen
+            ></iframe>
           )}
           {projectInfo.aftermath && (
             <CaseBlock title="Aftermath" text={projectInfo.aftermath} />

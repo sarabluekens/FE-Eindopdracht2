@@ -13,6 +13,21 @@ const Projects = ({ data }: { data: any }) => {
           <h2 className="hidden">Projects</h2>
           {data.map(
             (project: any) =>
+              project.projectType === 'star' && (
+                <ProjectList
+                  key={project.id}
+                  id={project.id}
+                  title={project.title}
+                  promoImage={project.promoImage}
+                  promoText={project.promoText}
+                  promoAlt={project.promoAlt}
+                  codeLink={project.codeLink}
+                  externalLink={project.externalLink}
+                />
+              ),
+          )}
+          {data.map(
+            (project: any) =>
               project.projectType === 'career' && (
                 <ProjectList
                   key={project.id}
