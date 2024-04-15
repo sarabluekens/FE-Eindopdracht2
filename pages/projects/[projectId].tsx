@@ -44,7 +44,10 @@ const project = ({ projectInfo }: { projectInfo: any }) => {
             ))}
           </div>
 
-          <div className=" s:w-3/12 mt-3 flex w-full justify-end  md:mt-0">
+          <div className=" mt-3 flex w-full items-center justify-end md:mt-0  md:w-3/12">
+            <p className="font-londrinaSolid text-normal font-thin tracking-londrina text-grey">
+              Visit:
+            </p>
             {projectInfo.codeLink && (
               <Link target="_blank" href={projectInfo.codeLink}>
                 <FiGithub className="mx-2" size={24} color="#E4EFEE" />
