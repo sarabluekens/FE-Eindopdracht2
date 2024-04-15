@@ -19,7 +19,7 @@ const Carousel = ({ images }: { images: Array<string> }) => {
   return (
     <section className="group absolute h-[50vh] w-full object-fill px-8 py-4">
       <div
-        style={{ backgroundImage: `url(${images[currentIndex]})` }}
+        style={{ backgroundImage: `url(/${images[currentIndex]}.png)` }}
         className="h-full w-full rounded-2xl bg-cover bg-center duration-500"
       >
         {/* left arrow */}

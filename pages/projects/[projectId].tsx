@@ -16,7 +16,7 @@ const project = ({ projectInfo }: { projectInfo: any }) => {
           {projectInfo.title}
         </h1>
         {
-          projectInfo.image.length > 0 && (
+          projectInfo.image.length > 1 && (
             <Carousel images={projectInfo.image} />
           )
           //
@@ -32,16 +32,19 @@ const project = ({ projectInfo }: { projectInfo: any }) => {
           />
         )}
 
-        <div className="flex w-7/12 flex-wrap justify-center md:justify-start">
-          {projectInfo.tags.map((tag: string) => (
-            <div
-              className="m-1 bg-gradient-to-r from-gradient1 via-gradient2 to-gradient3 p-1"
-              key={tag}
-            >
-              <p className="text-white">{tag}</p>
-            </div>
-          ))}
-          <div className=" mt-3 flex w-8/12 justify-end  md:mt-0">
+        <div className="flex h-auto w-7/12 flex-wrap gap-4 md:justify-between">
+          <div className="flex flex-wrap">
+            {projectInfo.tags.map((tag: string) => (
+              <div
+                className="m-1 bg-gradient-to-r from-gradient1 via-gradient2 to-gradient3 p-1"
+                key={tag}
+              >
+                <p className="text-white">{tag}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className=" s:w-3/12 mt-3 flex w-full justify-end  md:mt-0">
             {projectInfo.codeLink && (
               <Link target="_blank" href={projectInfo.codeLink}>
                 <FiGithub className="mx-2" size={24} color="#E4EFEE" />
