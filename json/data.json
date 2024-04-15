@@ -81,7 +81,7 @@
     "promoAlt": "Homescreen of the website.",
     "codeLink": "https://github.com/sarabluekens/personal",
     "externalLink": "https://sleepy-jones-731a03.netlify.app/",
-    "question": "We were asked to create a React project, where the input of the user had influence on the output that another user would receive. ",
+    "question": "We were asked to create a desktop React project, where the input of the user had influence on the output that another user would receive. It did not require a responsive solution. ",
     "solution": "In my solution I created an app where visitors can write out their emotions. They simplty select an emotion and start writing whatever needs to get off their chest. After they press the button the link of the letter is generated and shown. Important detail: the emotion they choose when writing the letter decides the design of the letter that gets send. ",
     "role": "Since this was an inbetween assignment, I made this project by myself. I worked on Concept, UX, Design and Development. ",
     "gamePlay": "Visitors come to the website to write out their worries. There is no obligation to share what they write with anybody. This app is meant to let people get what bothers them off their chest. If however, people decide to share the letter with someone else; they can send the link, that is automatically generated and shown with the person to read it. The letter that the other person receives is designed according to the emotion of the author. ",
