@@ -1,7 +1,36 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "projectType": "star",
+    "title": "Red Cross",
+    "promoText": "An web application that allows caregivers to provide aid to eventgoers.",
+    "promoImage": "redCross",
+    "image": ["redCross"],
+    "video": "https://www.youtube.com/embed/j-PcZz788oc?si=bReNc8rZk7NaLphc",
+    "promoAlt": "Red Cross for caregivers and event visitors.",
+    "codeLink": "/",
+    "question": "For fullstack development we (groups of two) were assigned to create a webapp that controls a full flow for a certain subject. We chose to work for the red cross. More specifically Red Cross on events. Milan created the platform for companies organising events and needing first aid and the Inventory and caregivers assignment. I created the platform for the caregivers and the visitors of the event.",
+    "solution": "Our responsive solution can be devided into 4 big parts. First the companies apply for first aid support. Second when the Red Cross creates the event and adds materials and people to it. The third part is where visitors can alert of an accident. The last part is where the caregivers can see the alert and be guided to the victim. Since i created the third and forth step, i will be focussing on those. Visitors at the event can scan a QR-code or surf to www.redCross.be. Once on the site they choose the event they attend and after that what type of emergency they have. As soon as that is selected the case is created. The caregivers that are assigned the the event of the emergency at the same day as the emergency will get an alert of a new case. When selecting this case they see the victim on the map and the victim will see the caregiver on the map. The coordinates update live everytime one changes. When the categiver and the victim are close enough they are redirected to the next step. For the victim that's a flash screen to get the attention of the searching caregiver. For the caregiver that's an after action report since no digital aid is needed in providing the physical aid. After the report is filled in the case is closed. ",
+    "role": "I developed (frontend, backend and testing) and designed the full caregivers and visitors part.  ",
+    "gamePlay": "A visitor selects the event and emergency they have. A caregiver assigned to the event gets an alert of a new case and can see the victim on the map. The app guides them to each other so proper aid can be provided. After the aid is provided an after action report, with follow up if needed, is filled in for the inventory of the supplies and insurance companies.",
+    "aftermath": "This project has a full frontend, backend and is linked by data to the other teammates part. For example when filling in the after action report of an case, only the materials selected for that event and still in inventory will be available. Another example is the events and caregivers available for an event are the ones assigned for that event on that workday. We did this to make the project as realistic as possible, which complicated certain bits quite a bit. In heinsight we should've made the project a bit more simple. But we are very proud of the result.",
+
+    "tags": [
+      "Design",
+      "Vue.js",
+      "TailwindCSS",
+      "Google Maps",
+      "GeoLocation",
+      "TypeOrm",
+      "GraphQl",
+      "MongoDB",
+      "PWA"
+    ],
+    "roleTags": ["Frontend", "Backend", "Design"]
+  },
+  {
+    "id": 1,
+    "projectType": "career",
     "title": "Jumping Jaws",
     "promoText": "An endless runner game where two players need to jump on a trampoline to survive.",
     "promoImage": "trampolineGame",
