@@ -83,7 +83,6 @@
     "promoImage": "smileSafari",
     "image": ["smileSafari"],
     "promoAlt": "3D of the lightroom with the light effects.",
-    "codeLink": "https://github.com/sarabluekens/Bap-SmileSafari",
     "externalLink": "https://www.behance.net/gallery/150697827/Sunset-Room-An-immersive-lightroom-for-Smile-Safari?tracking_source=search_projects%7Csmile+safari",
     "question": "For my bachelor thesis I worked with two other classmates on a project for Smile Safari. They asked us to create an interactive digital room, where people could take lots of pictures for social media. Most important for our client was that it was interactive and resulted in great pictures.",
     "solution": "We created an emersive lightroom with ledstrips and Arduino Uno board. These ledstrips were hung on the wall to guide the visitors into the room. We also used a Led matrix in combination with an arduino board to create our big led background, which was curved to avoid sharp corners on the photo. Lastly we used a Kinect Azure with Touchdesigner software to transfer real life feed to a led matrix giving control to the visiters",
