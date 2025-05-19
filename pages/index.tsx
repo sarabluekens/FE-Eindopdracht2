@@ -29,9 +29,9 @@ const Home = ({ data }: { data: any }) => {
         <Hero />
 
         <main>
-          <article className="mx-12 my-4 lg:mx-4 flex flex-col-reverse items-center justify-around lg:justify-center md:mx-28 md:my-4 lg:my-16 lg:flex-row">
+          <article className="mx-12 my-4 flex flex-col-reverse items-center justify-around md:mx-28 md:my-4 lg:mx-4 lg:my-16 lg:flex-row lg:justify-center">
             <div className="ml-4 md:w-11/12 lg:w-5/12">
-              <h2 className="text-smallTitle font-londrinaSolid font-thin tracking-londrina md:text-title">
+              <h2 className="font-londrinaSolid text-smallTitle font-thin tracking-londrina md:text-title">
                 About me
               </h2>
               <p className=" -mt-2 mb-8 font-londrinaSolid text-subtitle font-thin tracking-londrina text-grey">
@@ -41,7 +41,7 @@ const Home = ({ data }: { data: any }) => {
               <p className=" mb-4 font-normal tracking-mono md:text-normal ">
                 I'm a{' '}
                 <span className="bg-darkGradient3 font-semibold">
-                  full stack developer
+                  front end developer
                 </span>{' '}
                 with a love for UX/UI and creative development.
               </p>
@@ -67,7 +67,7 @@ const Home = ({ data }: { data: any }) => {
                 modelling, games, installations... As long as i can be creative.
               </p>
             </div>
-            <div className='lg:w-5/12 lg:ml-6 xl:w-4/12'>
+            <div className="lg:ml-6 lg:w-5/12 xl:w-4/12">
               <Image
                 className="m-auto my-4 w-4/5 opacity-80 md:w-9/12 lg:h-full lg:w-full"
                 src={profilepicture}
@@ -101,7 +101,7 @@ const Home = ({ data }: { data: any }) => {
               )}
             </section>
           </article>
-          <div className="my-8 md:my-4 w-full lg:my-8 ">
+          <div className="my-8 w-full md:my-4 lg:my-8 ">
             <ThirdButton link="/projects" text="View all projects" />
           </div>
         </main>

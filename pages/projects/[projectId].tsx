@@ -10,7 +10,7 @@ import Carousel from '../../components/Carousel'
 const project = ({ projectInfo }: { projectInfo: any }) => {
   return (
     <>
-      <Navbar />
+      <Navbar/>
       <article className="flex flex-col items-center justify-center pt-5">
         <h1 className="my-5 pt-1 text-center font-londrinaSolid text-thirdTitle font-thin tracking-londrina md:pt-16 md:text-title">
           {projectInfo.title}

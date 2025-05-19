@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { slide } from 'react-burger-menu'
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs'
 
 const Carousel = ({ images }: { images: Array<string> }) => {
