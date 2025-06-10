@@ -41,7 +41,7 @@ const Home = ({ data }: { data: any }) => {
               <p className=" mb-4 font-normal tracking-mono md:text-normal ">
                 I'm a{' '}
                 <span className="bg-darkGradient3 font-semibold">
-                  front end developer
+                  full-stack developer
                 </span>{' '}
                 with a love for UX/UI and creative development.
               </p>
