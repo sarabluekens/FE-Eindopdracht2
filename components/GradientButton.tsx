@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { transform } from 'typescript'
 
 const GradientButton = ({ link, text }: { link: string; text: string }) => {
   return (

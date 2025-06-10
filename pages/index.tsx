@@ -4,7 +4,6 @@ import PromoHeader from '../components/PromoHeader'
 import Hero from '../components/Hero'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import OutlineButton from '../components/OutlineButton'
 
 const Home = ({ data }: { data: any }) => {
   const [profilepicture, setProfilepicture] = useState('/profileLarge.png')

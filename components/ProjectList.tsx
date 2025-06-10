@@ -1,5 +1,4 @@
 import Image from 'next/image'
-import GradientButton from './GradientButton'
 import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import Link from 'next/link'
 import { useState } from 'react'
