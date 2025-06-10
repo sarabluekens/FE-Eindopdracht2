@@ -46,7 +46,7 @@ const Home = ({ data }: { data: any }) => {
                 with a love for UX/UI and creative development.
               </p>
               <p className="mb-4 font-normal tracking-mono md:text-normal ">
-                I currently study in Flandres, but who knows where the future
+                I currently live in Flandres, but who knows where the future
                 will take me!
               </p>
               <p className="mb-4 font-normal tracking-mono md:text-normal">
